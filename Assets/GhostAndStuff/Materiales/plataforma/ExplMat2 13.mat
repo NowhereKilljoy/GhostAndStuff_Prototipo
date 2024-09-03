@@ -7,14 +7,13 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: castle
+  m_Name: ExplMat2 13
   m_Shader: {fileID: 4800000, guid: 8fa84e1c8f3a97b4bb416e8eb087630e, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
   m_InvalidKeywords:
   - _EMISSION
-  - _METALLICGLOSSMAP
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -46,19 +45,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmmisTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 0fd8df5905c7dff44b655a4ef80828ab, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: c1fd7ade2bee9c94d8d41c6a0107d84c, type: 3}
+        m_Texture: {fileID: 2800000, guid: d63bef20966d7fc4eac87125f00273cc, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: 1487e4bf1a17ae549b9f925b9c733f96, type: 3}
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: a87759f83b7997a4595252c9cd4d5303, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -75,24 +74,25 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _EmissionScaleUI: 0
-    - _FresnelBrightness: 0
-    - _FresnelPower: 0
-    - _FresnelShadowDropoff: 0
+    - _FresnelBrightness: 0.856
+    - _FresnelPower: 0.52
+    - _FresnelShadowDropoff: 0.061
     - _GlossMapScale: 1
     - _Glossiness: 0.5
     - _GlossyReflections: 1
-    - _HighIntensity: 1.5
-    - _LightScalar: 1
-    - _LowIntensity: 1
+    - _GradIntensity: 0
+    - _GradYCap: 0
+    - _HighIntensity: 2.3
+    - _LightScalar: 2
+    - _LowIntensity: 1.82
     - _Metallic: 0
     - _Mode: 0
     - _OcclusionStrength: 1
-    - _OutlineSize: 0
+    - _OutlineSize: 63.66
     - _Parallax: 0.02
-    - _RampLevels: 2
+    - _RampLevels: 9
     - _RimAlpha: 0
-    - _RimDropOff: 0
+    - _RimDropOff: 0.168
     - _RimPower: 0
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
@@ -100,12 +100,11 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EmissionColor: {r: 0, g: 0, b: 0, a: 0}
-    - _EmissionColorUI: {r: 1, g: 1, b: 1, a: 1}
-    - _FresnelColor: {r: 1, g: 1, b: 1, a: 1}
-    - _HighColor: {r: 1, g: 1, b: 1, a: 1}
-    - _LowColor: {r: 1, g: 1, b: 1, a: 1}
-    - _OutlineColor: {r: 0, g: 0, b: 0, a: 1}
-    - _RimColor: {r: 1, g: 1, b: 1, a: 1}
+    - _Color: {r: 0.21944453, g: 0.97735846, b: 0.9624975, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FresnelColor: {r: 0.3433962, g: 0.23966894, b: 0.10042714, a: 1}
+    - _HighColor: {r: 0.93207544, g: 0.93207544, b: 0.93207544, a: 1}
+    - _LowColor: {r: 0.690566, g: 0.5042435, b: 0.5042435, a: 1}
+    - _OutlineColor: {r: 0.04150939, g: 0.04150939, b: 0.04150939, a: 1}
+    - _RimColor: {r: 0.4641509, g: 0.33191168, b: 0.33191168, a: 1}
   m_BuildTextureStacks: []
