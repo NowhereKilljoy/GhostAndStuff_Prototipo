@@ -10,7 +10,7 @@ public class RESPAWN : MonoBehaviour
     {
         if (transform.position.y < threshold)
         {
-            transform.position = new Vector3(-52.3f, 1.5f, -8.060307f);
+            transform.position = new Vector3(-66.38f, -9.39f, -17.64f);
         }
     }
 }
