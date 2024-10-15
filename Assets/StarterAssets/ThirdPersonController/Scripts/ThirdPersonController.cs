@@ -1,4 +1,4 @@
-﻿ using UnityEngine;
+﻿using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 #endif
@@ -21,13 +21,18 @@ namespace StarterAssets
         [Tooltip("Sprint speed of the character in m/s")]
         public float SprintSpeed = 5.335f;
 
+        public float dashDistance = 5f;       // Distancia que recorrerá el dash
+        public float dashDuration = 0.2f;     // Tiempo que durará el dash
+        public float dashCooldown = 1f;       // Tiempo de cooldown antes de que se pueda usar el dash otra vez
+
+
         [Tooltip("How fast the character turns to face movement direction")]
         [Range(0.0f, 0.3f)]
         public float RotationSmoothTime = 0.12f;
 
         [Tooltip("Acceleration and deceleration")]
         public float SpeedChangeRate = 10.0f;
-        public float Sensitivity = 1f; 
+        public float Sensitivity = 1f;
         public AudioClip LandingAudioClip;
         public AudioClip[] FootstepAudioClips;
         [Range(0, 1)] public float FootstepAudioVolume = 0.5f;
@@ -111,6 +116,12 @@ namespace StarterAssets
 
         private bool _hasAnimator;
 
+
+        private bool isDashing = false;       // Indica si el personaje está haciendo dash
+        private float dashEndTime;            // Tiempo cuando terminará el dash
+        private float nextDashTime;           // Tiempo en que se puede hacer el próximo dash
+        private Vector3 dashDirection;        // Dirección del dash
+
         private bool IsCurrentDeviceMouse
         {
             get
@@ -136,7 +147,7 @@ namespace StarterAssets
         private void Start()
         {
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
-            
+
             _hasAnimator = TryGetComponent(out _animator);
             _controller = GetComponent<CharacterController>();
             _input = GetComponent<StarterAssetsInputs>();
@@ -159,8 +170,11 @@ namespace StarterAssets
 
             JumpAndGravity();
             GroundedCheck();
-            Move();
+            Move();  // Realiza el movimiento (y dash si está activo)
+
+            HandleDash();  // Gestiona el dash
         }
+
 
         private void LateUpdate()
         {
@@ -214,6 +228,19 @@ namespace StarterAssets
 
         private void Move()
         {
+            // Si el personaje está haciendo dash
+            if (isDashing)
+            {
+                // Mover al personaje en la dirección calculada a una velocidad fija
+                _controller.Move(dashDirection * dashDistance * Time.deltaTime / dashDuration);
+
+                // Si el tiempo del dash se ha terminado, finalizar el dash
+                if (Time.time >= dashEndTime)
+                {
+                    EndDash();
+                }
+                return;  // Salimos para evitar otros movimientos mientras el dash está activo
+            }
             // set target speed based on move speed, sprint speed and if sprint is pressed
             float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
@@ -283,7 +310,47 @@ namespace StarterAssets
                 _animator.SetFloat(_animIDSpeed, _animationBlend);
                 _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
             }
+
+
         }
+
+
+
+
+
+
+
+        void HandleDash()
+        {
+            // Comprobamos si se ha presionado la tecla de dash y si no estamos en cooldown
+            if (Input.GetKeyDown(KeyCode.RightShift) && !isDashing && Time.time >= nextDashTime)
+            {
+                Debug.Log("Dash activado");
+                StartDash();
+            }
+        }
+
+        void StartDash()
+        {
+            isDashing = true;
+            dashEndTime = Time.time + dashDuration;  // El dash dura un periodo fijo
+            nextDashTime = Time.time + dashCooldown; // Cooldown antes de hacer otro dash
+
+            // Calcular la dirección del dash como la dirección en que el personaje está mirando
+            dashDirection = transform.forward;
+
+            Debug.Log("Iniciando dash en la dirección: " + dashDirection);
+        }
+
+
+        void EndDash()
+        {
+            isDashing = false;
+            Debug.Log("Dash finalizado");
+        }
+
+
+
 
         private void JumpAndGravity()
         {
@@ -380,7 +447,7 @@ namespace StarterAssets
             Sensitivity = newSensitivity;
         }
 
-        public void SetRotateOnMove(bool newRotateOnMove) 
+        public void SetRotateOnMove(bool newRotateOnMove)
         {
             _rotateOnMove = newRotateOnMove;
         }
