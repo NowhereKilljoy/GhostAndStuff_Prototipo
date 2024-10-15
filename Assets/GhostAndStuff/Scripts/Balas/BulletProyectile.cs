@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class BulletProyectile : MonoBehaviour
 {
+    [SerializeField] private Transform vfxHitGreen;
+    [SerializeField] private Transform vfxHitRed;
     private Rigidbody bulletRigidBody; 
     private void Awake()
     {
@@ -19,6 +21,15 @@ public class BulletProyectile : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        if (other.GetComponent<BulletTarget>() != null)
+        {
+            // Hit Target, golpear al objetivo
+            Instantiate(vfxHitGreen,transform.position, Quaternion.identity);
+        } else
+        {
+            //Hit Something else, golpeo algo más
+            Instantiate(vfxHitRed, transform.position, Quaternion.identity);
+        }            
         Destroy(gameObject);
     }
 

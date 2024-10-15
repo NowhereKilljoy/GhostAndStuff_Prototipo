@@ -7,7 +7,7 @@ using UnityEngine.InputSystem;
 
 public class ThirdPersonShooterControlerGNS : MonoBehaviour
 {
-    [SerializeField]  private CinemachineVirtualCamera aimVirtualCamera;
+    [SerializeField] private CinemachineVirtualCamera aimVirtualCamera;
     [SerializeField] private float normalSensitivity;
     [SerializeField] private float aimSensitivity;
     [SerializeField] private LayerMask aimColliderLayerMask = new LayerMask();
@@ -15,6 +15,8 @@ public class ThirdPersonShooterControlerGNS : MonoBehaviour
     [SerializeField] private Transform pfBulletProyectile;
     [SerializeField] private Transform spawnBulletPosition;
 
+    [SerializeField] private Transform vfxHitGreen;
+    [SerializeField] private Transform vfxHitRed;
 
     private ThirdPersonController thirdPersonController;
 
@@ -23,17 +25,19 @@ public class ThirdPersonShooterControlerGNS : MonoBehaviour
     private void Awake()
     {
         thirdPersonController = GetComponent<ThirdPersonController>();
-        StarterAssetsInputs = GetComponent <StarterAssetsInputs>();
+        StarterAssetsInputs = GetComponent<StarterAssetsInputs>();
     }
     private void Update()
     {
         Vector3 mouseWorldPosition = Vector3.zero;
         Vector2 screenCenterPoint = new Vector2(Screen.width / 2f, Screen.height / 2f);
         Ray ray = Camera.main.ScreenPointToRay(screenCenterPoint);
+        Transform hitTransform = null;
         if (Physics.Raycast(ray, out RaycastHit raycastHit, 999f, aimColliderLayerMask))
         {
             debugTransform.position = raycastHit.point;
             mouseWorldPosition = raycastHit.point;
+            hitTransform = raycastHit.transform;
         }
         if (StarterAssetsInputs.aim)
         {
@@ -56,13 +60,28 @@ public class ThirdPersonShooterControlerGNS : MonoBehaviour
             thirdPersonController.SetRotateOnMove(true);
         }
 
-        if (StarterAssetsInputs.shoot) 
+        if (StarterAssetsInputs.shoot)
         {
-            Vector3 aimDir = (mouseWorldPosition - spawnBulletPosition.position).normalized;
-            Instantiate(pfBulletProyectile, spawnBulletPosition.position,Quaternion.LookRotation(aimDir, Vector3.up));
-            StarterAssetsInputs.shoot = false;
-        
-        }
-    }
+            if (hitTransform != null)
+            {
+                if (hitTransform.GetComponent<BulletTarget>() != null)
+                {
+                    // Hit Something , golpeo algo
+                    Instantiate(vfxHitGreen, transform.position, Quaternion.identity);
+                }
+                else
+                {
+                    //Hit Something else, golpeo algo más
+                    Instantiate(vfxHitRed, transform.position, Quaternion.identity);
+                }
+                {
+                }
+                //Vector3 aimDir = (mouseWorldPosition - spawnBulletPosition.position).normalized;
+                //Instantiate(pfBulletProyectile, spawnBulletPosition.position,Quaternion.LookRotation(aimDir, Vector3.up));
+                StarterAssetsInputs.shoot = false;
 
+            }
+        }
+
+    }
 }
