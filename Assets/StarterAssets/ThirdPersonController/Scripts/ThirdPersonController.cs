@@ -323,7 +323,7 @@ namespace StarterAssets
         void HandleDash()
         {
             // Comprobamos si se ha presionado la tecla de dash y si no estamos en cooldown
-            if (Input.GetKeyDown(KeyCode.RightShift) && !isDashing && Time.time >= nextDashTime)
+            if (Input.GetKeyDown(KeyCode.Q) && !isDashing && Time.time >= nextDashTime)
             {
                 Debug.Log("Dash activado");
                 StartDash();
