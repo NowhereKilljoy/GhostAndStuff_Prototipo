@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,23 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class HealthSyst : MonoBehaviour
 {
-    public int maxHealth = 5;
+    public static HealthSyst instance;
     // private int currentHealth;
     public float damageInterval = 1f; 
-    private bool isTakingDamage = false; 
+    private bool isTakingDamage = false;
+
+    private void Awake()
+    {
+        instance = this;
+
+    }
 
     void Start()
     {
-   
-        GameManager.instance.playerMaxHealth = maxHealth;
-        GameManager.instance.TakeDamagePlayer(0); // Inicializa la vida en el GameManager sin reducirla
+        /*GameManager.instance.playerMaxHealth = maxHealth;
+        GameManager.instance.TakeDamagePlayer(0); // Inicializa la vida en el GameManager sin reducirla*/
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Enemy" && !isTakingDamage)
         {
-            // Iniciar el Coroutine para el daño continuo
+            // Iniciar el Coroutine para el daï¿½o continuo
             isTakingDamage = true;
             StartCoroutine(DamageOverTime());
         }
@@ -31,13 +37,13 @@ public class HealthSyst : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            // Detener el daño cuando el jugador sale del rango del enemigo
+            // Detener el daï¿½o cuando el jugador sale del rango del enemigo
             isTakingDamage = false;
             StopCoroutine(DamageOverTime());
         }
     }
 
-    // Coroutine que aplica daño cada cierto intervalo de tiempo
+    // Coroutine que aplica daï¿½o cada cierto intervalo de tiempo
     private IEnumerator DamageOverTime()
     {
         while (isTakingDamage)
@@ -47,11 +53,11 @@ public class HealthSyst : MonoBehaviour
             // Verificamos si la vida del jugador llega a 0, desde el GameManager
             if (GameManager.instance.playerCurrentHealth <= 0)
             {
-                SceneManager.LoadScene(0); // Reinicia la escena o lleva a la pantalla de Game Over
+                SceneManager.LoadScene(1); // Reinicia la escena o lleva a la pantalla de Game Over
                 yield break; // Detiene el Coroutine si el jugador muere
             }
 
-            yield return new WaitForSeconds(damageInterval); // Espera antes de aplicar más daño
+            yield return new WaitForSeconds(damageInterval); // Espera antes de aplicar mï¿½s daï¿½o
         }
     }
 }

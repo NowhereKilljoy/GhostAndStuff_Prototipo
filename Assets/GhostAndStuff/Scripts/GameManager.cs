@@ -5,10 +5,9 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
-
-    public HealthBar playerHealthBar;
+    
     public int playerMaxHealth = 100;
-    public int playerCurrentHealth;
+    public int playerCurrentHealth =100;
 
     // Diccionario para almacenar la vida de cada enemigo
     private Dictionary<int, int> enemyHealthDict = new Dictionary<int, int>();
@@ -18,7 +17,9 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject);        
+            playerCurrentHealth = playerMaxHealth;
+    
         }
         else
         {
@@ -26,25 +27,23 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    void Start()
+    public void ResetHealth()
     {
         playerCurrentHealth = playerMaxHealth;
-        playerHealthBar.SetMaxHealth(playerMaxHealth);
     }
-
     public void TakeDamagePlayer(int damage)
     {
         playerCurrentHealth -= damage;
-        playerHealthBar.SetHealth(playerCurrentHealth);
+        HealthBar.instance.SetHealth(playerCurrentHealth);
 
         if (playerCurrentHealth <= 0)
         {
             playerCurrentHealth = 0;
-            // Aquí puedes manejar la lógica de Game Over o reiniciar el nivel si lo deseas
+            // Aquï¿½ puedes manejar la lï¿½gica de Game Over o reiniciar el nivel si lo deseas
         }
     }
 
-    // Método para registrar un enemigo en el diccionario
+    // Mï¿½todo para registrar un enemigo en el diccionario
     public void RegisterEnemy(int enemyID, int maxHealth)
     {
         if (!enemyHealthDict.ContainsKey(enemyID))
@@ -53,7 +52,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Método para reducir la vida de un enemigo
+    // Mï¿½todo para reducir la vida de un enemigo
     public void TakeDamageEnemy(int enemyID, int damage)
     {
         if (enemyHealthDict.ContainsKey(enemyID))
@@ -67,7 +66,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Método para destruir el enemigo
+    // Mï¿½todo para destruir el enemigo
     public void DestroyEnemy(int enemyID)
     {
         // Encontrar al enemigo usando su ID y destruirlo
@@ -80,10 +79,10 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Método auxiliar para encontrar un enemigo por su ID
+    // Mï¿½todo auxiliar para encontrar un enemigo por su ID
     private EnemyHealth FindEnemyByID(int enemyID)
     {
-        // Buscar el enemigo por su ID (puedes mejorar la búsqueda dependiendo de cómo gestiones los enemigos)
+        // Buscar el enemigo por su ID (puedes mejorar la bï¿½squeda dependiendo de cï¿½mo gestiones los enemigos)
         EnemyHealth[] enemies = FindObjectsOfType<EnemyHealth>();
         foreach (EnemyHealth enemy in enemies)
         {
