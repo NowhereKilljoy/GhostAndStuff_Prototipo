@@ -117,7 +117,7 @@ namespace StarterAssets
         private bool _hasAnimator;
 
 
-        private bool isDashing = false;       // Indica si el personaje está haciendo dash
+        public bool isDashing = false;       // Indica si el personaje está haciendo dash
         private float dashEndTime;            // Tiempo cuando terminará el dash
         private float nextDashTime;           // Tiempo en que se puede hacer el próximo dash
         private Vector3 dashDirection;        // Dirección del dash

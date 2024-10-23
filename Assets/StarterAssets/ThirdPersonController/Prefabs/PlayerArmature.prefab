@@ -1125,6 +1125,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 2
   SprintSpeed: 5.335
+  dashDistance: 5
+  dashDuration: 0.2
+  dashCooldown: 1
   RotationSmoothTime: 0.12
   SpeedChangeRate: 10
   Sensitivity: 1
@@ -1156,6 +1159,7 @@ MonoBehaviour:
   BottomClamp: -30
   CameraAngleOverride: 0
   LockCameraPosition: 0
+  isDashing: 0
 --- !u!114 &5885216827943657505
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1327,6 +1331,8 @@ MonoBehaviour:
   debugTransform: {fileID: 0}
   pfBulletProyectile: {fileID: 0}
   spawnBulletPosition: {fileID: 0}
+  vfxHitGreen: {fileID: 0}
+  vfxHitRed: {fileID: 0}
 --- !u!1 &4523139366846529165
 GameObject:
   m_ObjectHideFlags: 0

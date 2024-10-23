@@ -3,17 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class RaycastDestroy : MonoBehaviour
-
-
 {
     void Update()
     {
-        // Si el usuario presiona el botón izquierdo del mouse
+        // Si el usuario presiona el botï¿½n izquierdo del mouse
         if (Input.GetMouseButtonDown(0))
         {
             RaycastHit hit;
 
-            // Crear un rayo desde la cámara hacia la posición del mouse
+            // Crear un rayo desde la cï¿½mara hacia la posiciï¿½n del mouse
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
             // Si el rayo colisiona con algo
