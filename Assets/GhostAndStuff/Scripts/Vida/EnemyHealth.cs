@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
@@ -14,17 +12,33 @@ public class EnemyHealth : MonoBehaviour
         GameManager.instance.RegisterEnemy(enemyID, maxHealth);
     }
 
-    // Método para recibir daño
-    private void OnTriggerEnter(Collider other)
+    void Update()
     {
-
-        if (other.CompareTag("BalaFantasmal"))
+        if (Input.GetMouseButtonDown(0))
         {
-            // Reducir la vida del enemigo usando el GameManager
-            GameManager.instance.TakeDamageEnemy(enemyID, damageE);
+            TryRaycast();
+        }
+    }
 
 
-            Destroy(other.gameObject);
+    // Método para recibir daño
+    public void TryRaycast()
+    {
+        RaycastHit hit;
+
+        // Crear un rayo desde la cámara hacia la posición del mouse
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+
+
+        if (Physics.Raycast(ray, out hit))
+        {
+
+            if (hit.collider.gameObject == gameObject)
+            {
+
+                GameManager.instance.TakeDamageEnemy(enemyID, damageE);
+                Debug.Log("Enemigo golpeado: " + enemyID + "  Aplicando daño: " + damageE);
+            }
         }
     }
 }
