@@ -11,7 +11,7 @@ public class JumpPads : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player")) //si queremos que funcione con los enemigos es necesario agregar el tag correspondiente
         {
             CharacterController characterController = other.GetComponent<CharacterController>();
             if (characterController != null)
@@ -39,10 +39,10 @@ public class JumpPads : MonoBehaviour
             yield return null;
         }
 
-        // Asegúrate de que el jugador suba al máximo al final
+       
         characterController.Move(new Vector3(0, targetSpeed * Time.deltaTime, 0));
 
-        // Comienza a aplicar la gravedad suavizada
+        // Comienza a aplicar la gravedad suavizada, se suaviza para que no sea tan brusco el salto
         while (true)
         {
             if (characterController.isGrounded)

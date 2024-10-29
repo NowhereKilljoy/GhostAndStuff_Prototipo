@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class EmpujeCabra : MonoBehaviour
 {
-
-    public AudioSource audioSource;
+    //Este script va en la cabeza o cuernos del enemigo cabra
     public float pushForce = 10f; // Fuerza de empuje
         public float smoothTime = 0.2f; // Tiempo para suavizar el empuje
 
@@ -13,7 +12,6 @@ public class EmpujeCabra : MonoBehaviour
         {
             if (other.CompareTag("Player"))
             {
-            audioSource.Play();
 
             CharacterController characterController = other.GetComponent<CharacterController>();
                 if (characterController != null)
@@ -25,12 +23,12 @@ public class EmpujeCabra : MonoBehaviour
     
     private IEnumerator ApplyPush(CharacterController characterController)
         {
-            // Obtener la dirección en X (puedes personalizar la dirección aquí)
+            // Este Script es similar a los jumpads y las trampas de empuje pero solo aplica fuerza en la dirección de X 
             Vector3 pushDirection = transform.right; // Empujar hacia la derecha
             float elapsedTime = 0f;
             float currentForce = 0f;
 
-            // Empuje suave
+            // Suavizado del empuje 
             while (elapsedTime < smoothTime)
             {
                 elapsedTime += Time.deltaTime;
@@ -40,7 +38,7 @@ public class EmpujeCabra : MonoBehaviour
                 yield return null;
             }
 
-            // Asegúrate de aplicar la fuerza total al final
+            
             characterController.Move(pushDirection * pushForce * Time.deltaTime);
         }
     }
