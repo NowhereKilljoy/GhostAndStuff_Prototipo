@@ -4,24 +4,26 @@ using UnityEngine;
 
 public class EmpujeCabra : MonoBehaviour
 {
-   
-    
-        public float pushForce = 10f; // Fuerza de empuje
+
+    public AudioSource audioSource;
+    public float pushForce = 10f; // Fuerza de empuje
         public float smoothTime = 0.2f; // Tiempo para suavizar el empuje
 
         private void OnTriggerEnter(Collider other)
         {
             if (other.CompareTag("Player"))
             {
-                CharacterController characterController = other.GetComponent<CharacterController>();
+            audioSource.Play();
+
+            CharacterController characterController = other.GetComponent<CharacterController>();
                 if (characterController != null)
                 {
                     StartCoroutine(ApplyPush(characterController));
                 }
             }
         }
-
-        private IEnumerator ApplyPush(CharacterController characterController)
+    
+    private IEnumerator ApplyPush(CharacterController characterController)
         {
             // Obtener la dirección en X (puedes personalizar la dirección aquí)
             Vector3 pushDirection = transform.right; // Empujar hacia la derecha
