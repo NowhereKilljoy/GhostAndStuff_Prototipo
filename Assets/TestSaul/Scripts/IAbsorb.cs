@@ -5,4 +5,7 @@ using UnityEngine;
 public interface IAbsorb
 {
     void InitAbsorb();
+    void GetHealth();
+    void GetAmmo();
+    void GetKey();
 }

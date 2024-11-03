@@ -14,6 +14,7 @@ namespace StarterAssets
 		public bool sprint;
         public bool aim;
         public bool shoot;
+        public bool absorb;
 
         [Header("Movement Settings")]
 		public bool analogMovement;
@@ -55,6 +56,11 @@ namespace StarterAssets
         {
             ShootInput(value.isPressed);
         }
+        
+        public void OnAbsorb(InputValue value)
+        {
+            AbsorbInput(value.isPressed);
+        }
 #endif
 
 
@@ -81,6 +87,10 @@ namespace StarterAssets
         public void AimInput(bool newAimState)
         {
             aim = newAimState;
+        }
+        public void AbsorbInput(bool newAbsorbState)
+        {
+            absorb = newAbsorbState;
         }
 
         public void ShootInput(bool newShootState)

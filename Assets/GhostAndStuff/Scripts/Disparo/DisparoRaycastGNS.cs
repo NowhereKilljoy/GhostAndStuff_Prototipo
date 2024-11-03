@@ -27,6 +27,8 @@ public class DisparoRaycastGNS : MonoBehaviour
         thirdPersonController = GetComponent<ThirdPersonController>();
         StarterAssetsInputs = GetComponent<StarterAssetsInputs>();
     }
+
+    
     private void Update()
     {
         Vector3 mouseWorldPosition = Vector3.zero;
@@ -38,6 +40,7 @@ public class DisparoRaycastGNS : MonoBehaviour
             debugTransform.position = raycastHit.point;
             mouseWorldPosition = raycastHit.point;
             hitTransform = raycastHit.transform;
+            //Debug.DrawRay(ray.origin, ray.direction * debugTransform.position, Color.red);
         }
         if (StarterAssetsInputs.aim)
         {
@@ -71,7 +74,7 @@ public class DisparoRaycastGNS : MonoBehaviour
                 }
                 else
                 {
-                    //Hit Something else, golpeo algo más
+                    //Hit Something else, golpeo algo mï¿½s
                     Instantiate(vfxHitRed, transform.position, Quaternion.identity);
                 }
                 {
@@ -84,4 +87,6 @@ public class DisparoRaycastGNS : MonoBehaviour
         }
 
     }
+    
+    
 }
