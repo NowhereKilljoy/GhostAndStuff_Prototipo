@@ -2249,7 +2249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d5b1d195b9cef04687985d9ec3277bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePerSecond: 1
+  damagePerSecond: 20
 --- !u!65 &294788024
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7746,7 +7746,7 @@ GameObject:
   - component: {fileID: 1123807183}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Wall
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12092,7 +12092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d5b1d195b9cef04687985d9ec3277bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damagePerSecond: 1
+  damagePerSecond: 10
 --- !u!1 &1805976071
 GameObject:
   m_ObjectHideFlags: 0
