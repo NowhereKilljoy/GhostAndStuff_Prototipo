@@ -4,8 +4,11 @@ using UnityEngine;
 
 public interface IAbsorb
 {
-    void InitAbsorb();
     void GetHealth();
+    void GetHealth(int amount);
+    public void UpdateAmmo();
+    void ShootAmmo();
     void GetAmmo();
     void GetKey();
+    void GetKey(int ID);
 }

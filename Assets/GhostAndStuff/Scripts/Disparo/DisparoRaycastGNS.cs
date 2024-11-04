@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using StarterAssets;
@@ -19,16 +18,15 @@ public class DisparoRaycastGNS : MonoBehaviour
     [SerializeField] private Transform vfxHitRed;
 
     private ThirdPersonController thirdPersonController;
-
+    private AbsorbMec absorbMec;
     private StarterAssetsInputs StarterAssetsInputs;
-
+    
     private void Awake()
     {
         thirdPersonController = GetComponent<ThirdPersonController>();
         StarterAssetsInputs = GetComponent<StarterAssetsInputs>();
+        absorbMec = GetComponent<AbsorbMec>();
     }
-
-    
     private void Update()
     {
         Vector3 mouseWorldPosition = Vector3.zero;
@@ -40,7 +38,10 @@ public class DisparoRaycastGNS : MonoBehaviour
             debugTransform.position = raycastHit.point;
             mouseWorldPosition = raycastHit.point;
             hitTransform = raycastHit.transform;
-            //Debug.DrawRay(ray.origin, ray.direction * debugTransform.position, Color.red);
+            
+           
+            
+            Debug.DrawRay(ray.origin, ray.direction.normalized * debugTransform.position.magnitude, Color.red);
         }
         if (StarterAssetsInputs.aim)
         {
@@ -52,11 +53,7 @@ public class DisparoRaycastGNS : MonoBehaviour
             worldAimTarget.y = transform.position.y;
             Vector3 aimDirection = (worldAimTarget - transform.position).normalized;
             transform.forward = Vector3.Lerp(transform.forward, aimDirection, Time.deltaTime * 20f);
-        }
-
-
-
-        else
+        }else
         {
             aimVirtualCamera.gameObject.SetActive(false);
             thirdPersonController.SetSensitivity(normalSensitivity);
@@ -77,16 +74,48 @@ public class DisparoRaycastGNS : MonoBehaviour
                     //Hit Something else, golpeo algo m�s
                     Instantiate(vfxHitRed, transform.position, Quaternion.identity);
                 }
-                {
-                }
-                //Vector3 aimDir = (mouseWorldPosition - spawnBulletPosition.position).normalized;
-                //Instantiate(pfBulletProyectile, spawnBulletPosition.position,Quaternion.LookRotation(aimDir, Vector3.up));
-                StarterAssetsInputs.shoot = false;
 
+                if (absorbMec.Amount > 0)
+                {
+                    
+                    Vector3 aimDir = (mouseWorldPosition - spawnBulletPosition.position).normalized;
+                    Instantiate(pfBulletProyectile, spawnBulletPosition.position,Quaternion.LookRotation(aimDir, Vector3.up));
+                    absorbMec.ShootAmmo();
+                }
+                
+                StarterAssetsInputs.shoot = false;
             }
         }
 
+        if (StarterAssetsInputs.absorb)
+        {
+            if (hitTransform != null)
+            {
+                if (hitTransform.GetComponent<Absorb>() != null)
+                {
+                    Absorb obj = hitTransform.GetComponent<Absorb>();
+                    obj.AnimStart();
+
+                    switch (obj.absorb)
+                    {
+                        case GameManager.AbsorbType.Bullet:                    
+                            absorbMec.GetAmmo();
+                            break;
+                        case GameManager.AbsorbType.Health:
+                            absorbMec.GetHealth();
+                            break;
+                        case GameManager.AbsorbType.Key:
+                            absorbMec.GetKey(obj.keyNumber);
+                            break;
+                    }
+                    
+                    Instantiate(vfxHitGreen, transform.position, Quaternion.identity);
+                }
+            }
+            StarterAssetsInputs.absorb = false;
+        }
+        
+
     }
-    
     
 }

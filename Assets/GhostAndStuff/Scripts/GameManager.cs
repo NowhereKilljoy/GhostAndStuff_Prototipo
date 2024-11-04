@@ -6,8 +6,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     
+    public enum AbsorbType {Bullet,Health,Key}
+    
     public int playerMaxHealth = 100;
-    public int playerCurrentHealth =100;
+    public int playerCurrentHealth = 100;
 
     // Diccionario para almacenar la vida de cada enemigo
     private Dictionary<int, int> enemyHealthDict = new Dictionary<int, int>();
@@ -31,6 +33,21 @@ public class GameManager : MonoBehaviour
     {
         playerCurrentHealth = playerMaxHealth;
     }
+
+    public void SumHealth(int value)
+    {
+        if (playerCurrentHealth < playerMaxHealth)
+        {
+            playerCurrentHealth += value;
+            if (playerCurrentHealth > playerMaxHealth)
+            {
+                playerCurrentHealth = playerMaxHealth;
+            }
+            HealthBar.instance.SetHealth(playerCurrentHealth);
+
+        }
+    }
+    
     public void TakeDamagePlayer(int damage)
     {
         playerCurrentHealth -= damage;

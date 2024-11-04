@@ -16,6 +16,7 @@ public class BulletProyectile : MonoBehaviour
     {
         float speed = 42f;
         bulletRigidBody.velocity = transform.forward * speed;
+        StartCoroutine(DestroyBullet());
     }
 
 
@@ -27,15 +28,19 @@ public class BulletProyectile : MonoBehaviour
             Instantiate(vfxHitGreen,transform.position, Quaternion.identity);
         } else
         {
-            //Hit Something else, golpeo algo más
+            //Hit Something else, golpeo algo mï¿½s
             Instantiate(vfxHitRed, transform.position, Quaternion.identity);
         }            
         Destroy(gameObject);
     }
 
-
-
-
+    IEnumerator DestroyBullet()
+    {
+        yield return new WaitForSeconds(2.5f);
+        //Implementar pool
+        //gameObject.SetActive(false);
+        Destroy(this.gameObject);
+    }
 
 
 
