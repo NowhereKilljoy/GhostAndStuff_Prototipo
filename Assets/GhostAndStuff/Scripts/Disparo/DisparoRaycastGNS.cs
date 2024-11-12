@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine;
 using StarterAssets;
@@ -21,6 +22,8 @@ public class DisparoRaycastGNS : MonoBehaviour
     private AbsorbMec absorbMec;
     private StarterAssetsInputs StarterAssetsInputs;
     
+    private readonly List<IObserver> _observers = new List<IObserver>();
+
     private void Awake()
     {
         thirdPersonController = GetComponent<ThirdPersonController>();
@@ -76,11 +79,16 @@ public class DisparoRaycastGNS : MonoBehaviour
                 }
 
                 if (absorbMec.Amount > 0)
-                {
-                    
+                {   
                     Vector3 aimDir = (mouseWorldPosition - spawnBulletPosition.position).normalized;
                     Instantiate(pfBulletProyectile, spawnBulletPosition.position,Quaternion.LookRotation(aimDir, Vector3.up));
                     absorbMec.ShootAmmo();
+                    if (hitTransform.GetComponent<INotifications>() != null)
+                    {
+                        Debug.Log("a");
+                        hitTransform.GetComponent<INotifications>().Notify(1);
+                    }
+                 
                 }
                 
                 StarterAssetsInputs.shoot = false;
@@ -117,5 +125,5 @@ public class DisparoRaycastGNS : MonoBehaviour
         
 
     }
-    
+
 }

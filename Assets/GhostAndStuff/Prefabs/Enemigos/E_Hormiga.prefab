@@ -335,7 +335,9 @@ GameObject:
   - component: {fileID: 4344730816980627923}
   - component: {fileID: 2391661848827058675}
   - component: {fileID: 5347742843104494452}
+  - component: {fileID: 7265655314696436237}
   - component: {fileID: 7487654689412668427}
+  - component: {fileID: 4379432499000175659}
   m_Layer: 0
   m_Name: E_Hormiga
   m_TagString: Enemy
@@ -496,6 +498,20 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6435147, y: 0.9684359, z: 0.5182048}
   m_Center: {x: 0, y: 0.36398154, z: 0.021760076}
+--- !u!114 &7265655314696436237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3105861912737922815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4729c9621844543459951f965af7b026, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pushForce: 30
+  smoothTime: 0.2
 --- !u!114 &7487654689412668427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,6 +527,20 @@ MonoBehaviour:
   maxHealth: 100
   enemyID: 1
   damageE: 50
+--- !u!114 &4379432499000175659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3105861912737922815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4955f0137f70d24898c738a3c75c4e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  absorb: 0
+  keyNumber: 0
 --- !u!1 &3895528033799957901
 GameObject:
   m_ObjectHideFlags: 0

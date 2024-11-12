@@ -1,27 +1,44 @@
 using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
-public class EnemyHealth : MonoBehaviour
+public class EnemyHealth : MonoBehaviour, INotifications
 {
     public int maxHealth;
     public int enemyID;
     public int damageE;
+    private readonly List<IObserver> _observers = new List<IObserver>();
 
     void Start()
     {
-
-        GameManager.instance.RegisterEnemy(enemyID, maxHealth);
+        //EnemyManager.RegisterEnemy(enemyID, maxHealth);
     }
 
-    void Update()
+    public void SetID(int newid)
     {
-        if (Input.GetMouseButtonDown(0))
+        enemyID = newid;
+    }
+    
+   public void SuscribeNotification(IObserver observer)
+    {
+        _observers.Add(observer);
+        
+    }
+
+    public void UnSuscribeNotification(IObserver observer)
+    {
+        _observers.Remove(observer);
+    }
+
+    public void Notify(int idEvent)
+    {
+        foreach (var observer in _observers)
         {
-            TryRaycast();
+            observer.Updated(this , idEvent);
         }
     }
 
-
-    // Método para recibir daño
+    // Método para recibir daño (En desuso)
     public void TryRaycast()
     {
         RaycastHit hit;
@@ -35,10 +52,10 @@ public class EnemyHealth : MonoBehaviour
 
             if (hit.collider.gameObject == gameObject)
             {
-
-                GameManager.instance.TakeDamageEnemy(enemyID, damageE);
+                //EnemyManager.TakeDamageEnemy(enemyID, damageE);
                 Debug.Log("Enemigo golpeado: " + enemyID + "  Aplicando daño: " + damageE);
             }
         }
     }
+    
 }

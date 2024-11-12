@@ -10,9 +10,15 @@ public class Absorb : MonoBehaviour
 
     [Tooltip("NO USAR mayor que 2")]
     public int keyNumber;
+
+    private EnemyHealth _GetID;
     
     private void Start()
     {
+        if (GetComponent<EnemyHealth>() != null)
+        {
+            _GetID = GetComponent<EnemyHealth>();
+        }
         animator = GetComponent<Animator>();
     }
 
@@ -29,7 +35,7 @@ public class Absorb : MonoBehaviour
 
     public void AnimEnd()
     {
-        gameObject.SetActive(false);
+        _GetID.Notify(2);
     }
     
     IEnumerator WaitEnd()
