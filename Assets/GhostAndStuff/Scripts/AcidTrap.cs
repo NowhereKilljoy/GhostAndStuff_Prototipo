@@ -1,18 +1,29 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class AcidTrap : MonoBehaviour
 {
-    public int damagePerSecond = 10; // Cantidad de da�o por segundo
-    private bool isPlayerInTrap = false; // Verifica si el jugador est� en la trampa
+    public int damagePerSecond = 10; // Cantidad de da o por segundo
+    private bool isPlayerInTrap = false; // Verifica si el jugador est  en la trampa
+    private GameObject player;
+    private bool isDamaging = false;
+    private RespawnManager respawnManager;
+
+    private void Start()
+    {
+        // player = FindObjectWithTag("Player");
+
+        respawnManager = FindObjectOfType<RespawnManager>();
+    }
+
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !isDamaging)
         {
+            player = other.gameObject;
             isPlayerInTrap = true;
+            isDamaging = true;
             StartCoroutine(DamagePlayerOverTime());
         }
     }
@@ -22,6 +33,7 @@ public class AcidTrap : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             isPlayerInTrap = false;
+            isDamaging = false;
         }
     }
 
@@ -33,8 +45,13 @@ public class AcidTrap : MonoBehaviour
             if (GameManager.instance.playerCurrentHealth <= 0)
             {
                 //SceneManager.LoadScene(1);
+                isDamaging = false;
+                respawnManager.RespawnPlayer(player);
+                //  HealthSyst.instance.DeathPlayer(player);
+                yield break;
             }
-            yield return new WaitForSeconds(1); // Aplica da�o cada segundo
+            yield return new WaitForSeconds(1); // Aplica da o cada segundo
         }
+        isDamaging = false;
     }
 }
