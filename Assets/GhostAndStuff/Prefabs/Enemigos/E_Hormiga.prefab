@@ -57,12 +57,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 697828756821614747}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0.031479135}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.90992147, z: -0, w: -0.41478056}
+  m_LocalPosition: {x: -0.012709593, y: -0.4694519, z: -0.011180933}
+  m_LocalScale: {x: 1.7445397, y: 1.2897673, z: 1.7415329}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2515959491544091551}
+  m_Father: {fileID: 2428946382778435692}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &5503279621272867264
 SkinnedMeshRenderer:
@@ -237,6 +237,42 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &2916656176190167551
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2428946382778435692}
+  m_Layer: 0
+  m_Name: FantasmaVisual
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2428946382778435692
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2916656176190167551}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0.90992147, z: -0, w: -0.41478056}
+  m_LocalPosition: {x: -0.00000003683753, y: 0.36398187, z: 0.021759987}
+  m_LocalScale: {x: 0.5772576, y: 0.7753337, z: 0.5701662}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 6309446255597118350}
+  - {fileID: 1977555131604294499}
+  - {fileID: 2090200321568282870}
+  - {fileID: 1408367564615649014}
+  - {fileID: 2098392503342846313}
+  m_Father: {fileID: 2515959491544091551}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2918335008649234187
 GameObject:
   m_ObjectHideFlags: 0
@@ -358,11 +394,7 @@ Transform:
   m_LocalScale: {x: 1.8202965, y: 1.2897673, z: 1.6659067}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6309446255597118350}
-  - {fileID: 1977555131604294499}
-  - {fileID: 2090200321568282870}
-  - {fileID: 1408367564615649014}
-  - {fileID: 2098392503342846313}
+  - {fileID: 2428946382778435692}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 229.011, z: 0}
 --- !u!95 &2901849435386543134
@@ -551,7 +583,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6309446255597118350}
   m_Layer: 0
-  m_Name: JNTs
+  m_Name: Cuernos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -565,13 +597,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3895528033799957901}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.016681269, y: 0.005946001, z: 0.031479135}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.90992147, z: -0, w: -0.41478056}
+  m_LocalPosition: {x: 0.0062444354, y: -0.4617834, z: -0.03326519}
+  m_LocalScale: {x: 1.7445397, y: 1.2897673, z: 1.7415329}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1688391312823782148}
-  m_Father: {fileID: 2515959491544091551}
+  m_Father: {fileID: 2428946382778435692}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4689813913351982223
 GameObject:
@@ -668,7 +700,7 @@ GameObject:
   - component: {fileID: 423443026822657055}
   - component: {fileID: 1653831903559585908}
   m_Layer: 0
-  m_Name: Capsule_1
+  m_Name: Ojo2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -682,12 +714,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5052559054722221008}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.049, y: 0.534, z: 0.121}
-  m_LocalScale: {x: 0.0661253, y: 0.08917896, z: 0.039282437}
+  m_LocalRotation: {x: -0, y: 0.90992147, z: -0, w: -0.41478056}
+  m_LocalPosition: {x: -0.07409284, y: 0.2192841, z: -0.1790354}
+  m_LocalScale: {x: 0.115358226, y: 0.1150201, z: 0.06841166}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2515959491544091551}
+  m_Father: {fileID: 2428946382778435692}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &423443026822657055
 MeshFilter:
@@ -965,7 +997,7 @@ GameObject:
   - component: {fileID: 1977555131604294499}
   - component: {fileID: 3969586892075687293}
   m_Layer: 0
-  m_Name: Kid_ghost_v1:Ghost_Kid_S1
+  m_Name: CuerpoFant
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -979,12 +1011,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8884891427833179180}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0.031479135}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.90992147, z: -0, w: -0.41478056}
+  m_LocalPosition: {x: -0.012709593, y: -0.4694519, z: -0.011180933}
+  m_LocalScale: {x: 1.7445397, y: 1.2897673, z: 1.7415329}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2515959491544091551}
+  m_Father: {fileID: 2428946382778435692}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!137 &3969586892075687293
 SkinnedMeshRenderer:
@@ -1056,7 +1088,7 @@ GameObject:
   - component: {fileID: 1871129841965720018}
   - component: {fileID: 4111053005598096268}
   m_Layer: 0
-  m_Name: Capsule
+  m_Name: Ojo1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1070,12 +1102,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9159934060523000770}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.025, y: 0.534, z: 0.121}
-  m_LocalScale: {x: 0.0661253, y: 0.08917896, z: 0.039282437}
+  m_LocalRotation: {x: -0, y: 0.90992147, z: -0, w: -0.41478056}
+  m_LocalPosition: {x: -0.15817533, y: 0.2192841, z: -0.08106859}
+  m_LocalScale: {x: 0.115358226, y: 0.1150201, z: 0.06841166}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2515959491544091551}
+  m_Father: {fileID: 2428946382778435692}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &1871129841965720018
 MeshFilter:

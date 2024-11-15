@@ -747,7 +747,6 @@ GameObject:
   - component: {fileID: 2854145840818394720}
   - component: {fileID: 6892875696096401426}
   - component: {fileID: 749909940580593829}
-  - component: {fileID: 4119908527309318789}
   - component: {fileID: 9134702986282057362}
   - component: {fileID: 4444581294054018513}
   - component: {fileID: 3327557079432171249}
@@ -891,20 +890,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.6435147, y: 0.9684359, z: 0.5182048}
   m_Center: {x: 0, y: 0.36398154, z: 0.021760076}
---- !u!114 &4119908527309318789
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7492201959274541570}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4729c9621844543459951f965af7b026, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  pushForce: 30
-  smoothTime: 0.2
 --- !u!114 &9134702986282057362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -917,8 +902,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6470250d4bb3f644946ff83bff8cc6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
-  enemyID: 2
+  maxHealth: 50
+  enemyID: 7
   damageE: 50
 --- !u!114 &4444581294054018513
 MonoBehaviour:
