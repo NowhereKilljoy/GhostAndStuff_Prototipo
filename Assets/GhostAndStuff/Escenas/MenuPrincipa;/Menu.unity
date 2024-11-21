@@ -532,7 +532,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
           m_FloatArgument: 0
-          m_StringArgument: PB_Enemigos
+          m_StringArgument: Nivel1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &216782389
@@ -585,8 +585,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 514a9cc7f33d7a64db099bfb0d422d9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controllerMenu: {fileID: 0}
-  mainMenu: {fileID: 0}
+  controllerMenu: {fileID: 1053656868}
+  mainMenu: {fileID: 1190023986}
 --- !u!1 &501479787
 GameObject:
   m_ObjectHideFlags: 0
@@ -1067,7 +1067,7 @@ RectTransform:
   m_GameObject: {fileID: 1190023986}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.495, y: 1.495, z: 1.495}
+  m_LocalScale: {x: 1.0615396, y: 1.0615396, z: 1.0615396}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 216782387}
@@ -1075,10 +1075,10 @@ RectTransform:
   - {fileID: 45732877}
   m_Father: {fileID: 501479791}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -165}
-  m_SizeDelta: {x: 100, y: 100}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -123.05}
+  m_SizeDelta: {x: -544, y: -262}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1449777726
 GameObject:
