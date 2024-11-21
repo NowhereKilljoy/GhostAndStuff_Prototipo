@@ -7,7 +7,7 @@ public class MenuPausa : MonoBehaviour
 {
     public GameObject ObjetoMenuPausa;
     public bool Pausa = false;
-    
+    public GameObject MenuSalir;
     void Start()
     {
         
@@ -26,6 +26,7 @@ public class MenuPausa : MonoBehaviour
                 Cursor.visible = true;
                 Cursor.lockState = CursorLockMode.None;
             }
+            
             else if (Pausa == true)
             {
                 Resumir();
@@ -36,7 +37,8 @@ public class MenuPausa : MonoBehaviour
     public void Resumir()
     {
         ObjetoMenuPausa.SetActive(false);
-        Pausa = false;
+        MenuSalir.SetActive(false);
+       Pausa = false;
         Time.timeScale = 1;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -44,5 +46,9 @@ public class MenuPausa : MonoBehaviour
     public void IrAlMenu (string NombreMenu) 
     {
     SceneManager.LoadScene(NombreMenu);
+    }
+    public void SalirDelJuego()
+    {
+        Application.Quit();
     }
 }
