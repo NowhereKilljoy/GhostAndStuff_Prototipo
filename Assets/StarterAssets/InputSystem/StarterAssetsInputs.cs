@@ -15,6 +15,8 @@ namespace StarterAssets
         public bool aim;
         public bool shoot;
         public bool absorb;
+        public bool dash;
+
 
         [Header("Movement Settings")]
 		public bool analogMovement;
@@ -56,7 +58,12 @@ namespace StarterAssets
         {
             ShootInput(value.isPressed);
         }
-        
+
+        public void OnDash(InputValue value)
+        {
+            DashInput(value.isPressed);
+        }
+
         public void OnAbsorb(InputValue value)
         {
             AbsorbInput(value.isPressed);
@@ -96,6 +103,11 @@ namespace StarterAssets
         public void ShootInput(bool newShootState)
         {
             shoot = newShootState;
+        }
+
+        public void DashInput(bool newdashState)
+        {
+            dash = newdashState;
         }
 
         private void OnApplicationFocus(bool hasFocus)

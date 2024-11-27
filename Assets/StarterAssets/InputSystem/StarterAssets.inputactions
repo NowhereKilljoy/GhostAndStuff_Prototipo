@@ -279,17 +279,6 @@
                 },
                 {
                     "name": "",
-                    "id": "f6087b6a-c3e7-45a4-acd4-430e4ccda102",
-                    "path": "<Gamepad>/leftTrigger",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "Aim",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
                     "id": "13714b7e-7fc2-47eb-9c50-e39d78c118fe",
                     "path": "<Mouse>/leftButton",
                     "interactions": "",
@@ -312,6 +301,17 @@
                 },
                 {
                     "name": "",
+                    "id": "5ef36849-c0d1-4a94-b9e3-4d270b2fb2d2",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Gamepad",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "29eee648-03ae-49f0-99ea-a9d0374e0ec8",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
@@ -324,7 +324,7 @@
                 {
                     "name": "",
                     "id": "f1e9ff34-cc08-4ec9-a9fc-ba555282aa73",
-                    "path": "<Gamepad>/rightTrigger",
+                    "path": "<Gamepad>/leftTrigger",
                     "interactions": "",
                     "processors": "",
                     "groups": "Gamepad",
@@ -335,10 +335,10 @@
                 {
                     "name": "",
                     "id": "fd0b3a56-5466-4654-9c9f-682e5a8aa400",
-                    "path": "",
+                    "path": "<Gamepad>/rightTrigger",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
+                    "groups": "Gamepad",
                     "action": "Shoot",
                     "isComposite": false,
                     "isPartOfComposite": false
