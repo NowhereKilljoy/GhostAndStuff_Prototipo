@@ -76,6 +76,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "Encoger",
+                    "type": "Button",
+                    "id": "c3a15fba-e362-4350-bbf4-3e2594676f69",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -312,6 +321,17 @@
                 },
                 {
                     "name": "",
+                    "id": "7d148178-2114-4f0b-aa11-480c9de28283",
+                    "path": "<Keyboard>/q",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Dash",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
                     "id": "29eee648-03ae-49f0-99ea-a9d0374e0ec8",
                     "path": "<Mouse>/rightButton",
                     "interactions": "",
@@ -340,6 +360,17 @@
                     "processors": "",
                     "groups": "Gamepad",
                     "action": "Shoot",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "e09ecc3d-4339-449d-8385-f10af2126126",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Encoger",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

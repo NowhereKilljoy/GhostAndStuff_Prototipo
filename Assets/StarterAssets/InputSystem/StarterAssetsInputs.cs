@@ -16,6 +16,7 @@ namespace StarterAssets
         public bool shoot;
         public bool absorb;
         public bool dash;
+        public bool actionEncoger;
 
 
         [Header("Movement Settings")]
@@ -59,15 +60,21 @@ namespace StarterAssets
             ShootInput(value.isPressed);
         }
 
-        public void OnDash(InputValue value)
-        {
-            DashInput(value.isPressed);
-        }
-
         public void OnAbsorb(InputValue value)
         {
             AbsorbInput(value.isPressed);
         }
+        
+        public void OnDash(InputValue value)
+        {
+	        DashInput(value.isPressed);
+        }
+
+        public void OnEncoger(InputValue value)
+        {
+			EncogerInput(value.isPressed);
+        }
+        
 #endif
 
 
@@ -110,6 +117,11 @@ namespace StarterAssets
             dash = newdashState;
         }
 
+        public void EncogerInput(bool newEncogerState)
+        {
+	        actionEncoger = newEncogerState;
+        }
+        
         private void OnApplicationFocus(bool hasFocus)
 		{
 			SetCursorState(cursorLocked);

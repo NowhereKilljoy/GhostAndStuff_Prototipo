@@ -345,6 +345,7 @@ namespace StarterAssets
 
         void EndDash()
         {
+            _input.dash = false;
             isDashing = false;
             Debug.Log("Dash finalizado");
         }
