@@ -26,7 +26,7 @@ public class Encogerte: MonoBehaviour
 
                 //StartCoroutine(particula());
                 gameObject.transform.position += new Vector3( 0,.5f, 0);
-                gameObject.transform.localScale = new Vector3(1f, 1f, 1f);
+                gameObject.transform.localScale = new Vector3(0.6f, 0.6f, 0.6f);
                 grande = false;
 
             }
@@ -35,7 +35,7 @@ public class Encogerte: MonoBehaviour
             {
 
                 //StartCoroutine(particula());
-                gameObject.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
+                gameObject.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
                 grande = true;
 
             }
