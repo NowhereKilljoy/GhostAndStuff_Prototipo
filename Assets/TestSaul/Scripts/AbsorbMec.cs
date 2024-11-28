@@ -64,7 +64,15 @@ public class AbsorbMec : MonoBehaviour, IAbsorb
 
     public void GetAmmo()
     {
-        ammoAmount += 1;
+        if (ammoAmount >= 3)
+        {
+            Debug.Log("Municion Llena");
+        }
+        else
+        {
+            //ammoAmount += 1;
+            ammoAmount = 3;
+        }
         UpdateAmmo();
     }
 

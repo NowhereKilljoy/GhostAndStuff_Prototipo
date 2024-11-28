@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using StarterAssets;
@@ -7,12 +8,18 @@ public class Encogerte: MonoBehaviour
     bool grande;
     Animator particle;
     public ThirdPersonController th;
+    private StarterAssetsInputs _inputs;
 
+    private void Start()
+    {
+        th = GetComponent<ThirdPersonController>();
+        _inputs = GetComponent<StarterAssetsInputs>();
+    }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && !th.isDashing)
+        if (_inputs.actionEncoger && !th.isDashing)
         {
             if (grande)
             {
@@ -32,6 +39,7 @@ public class Encogerte: MonoBehaviour
                 grande = true;
 
             }
+            _inputs.actionEncoger = false;
         }
     }
 
