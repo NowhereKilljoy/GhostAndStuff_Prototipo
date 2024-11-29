@@ -91,7 +91,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 50
-  enemyID: 77
+  enemyID: 1
   damageE: 50
 --- !u!114 &6060719898317515193
 MonoBehaviour:
@@ -162,9 +162,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Player
-  speed: 0.68
+  speed: 1
   detectionRange: 10
-  patrolSpeed: 2
+  patrolSpeed: 0
   knockbackDistance: 1
   knockbackDuration: 0.5
   maxFollowHeightDifference: 3
