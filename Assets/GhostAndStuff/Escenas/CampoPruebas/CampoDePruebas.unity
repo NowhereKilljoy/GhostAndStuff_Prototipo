@@ -5438,89 +5438,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &627731401
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 2037701039}
-    m_Modifications:
-    - target: {fileID: 1317979085220360351, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 3.9704244
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317979085220360351, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 6.232394
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317979085220360351, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 12.978394
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317979085220360351, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.27000082
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317979085220360351, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -4.442747
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317979085220360351, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: -0.7346325
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317979085220360351, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.015022169
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317979085220360351, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.6780415
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317979085220360351, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.01868644
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317979085220360351, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -0.187
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317979085220360351, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 274.592
-      objectReference: {fileID: 0}
-    - target: {fileID: 1317979085220360351, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -2.741
-      objectReference: {fileID: 0}
-    - target: {fileID: 7136807790499416058, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-        type: 3}
-      propertyPath: m_Name
-      value: E_Jaguar
-      objectReference: {fileID: 0}
-    - target: {fileID: 7136807790499416058, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 6468a5cbe4661d34fb10843c8e8ab5c7, type: 3}
 --- !u!1 &671170368
 GameObject:
   m_ObjectHideFlags: 0
@@ -11435,12 +11352,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1805976072}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &1611521485 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1317979085220360351, guid: 6468a5cbe4661d34fb10843c8e8ab5c7,
-    type: 3}
-  m_PrefabInstance: {fileID: 627731401}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1632236120 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2515959491544091551, guid: df701ad2c11b7614a8ca9253d621ff1a,
@@ -13478,7 +13389,6 @@ Transform:
   - {fileID: 1442235521}
   - {fileID: 917239960}
   - {fileID: 1632236120}
-  - {fileID: 1611521485}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2044726404
