@@ -163,7 +163,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Player
-  speed: 1
+  speed: 1.5
   detectionRange: 10
   patrolSpeed: 0
   knockbackDistance: 1
@@ -182,8 +182,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4729c9621844543459951f965af7b026, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pushForce: 10
-  smoothTime: 0.2
+  pushForce: 20
+  smoothTime: 2
 --- !u!1001 &8162642639714339922
 PrefabInstance:
   m_ObjectHideFlags: 0

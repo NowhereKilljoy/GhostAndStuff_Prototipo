@@ -73,7 +73,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155338136395108551}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 10
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -111,10 +111,10 @@ CapsuleCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.2996995
-  m_Height: 0.9062155
+  m_Radius: 0.14989746
+  m_Height: 0.46034995
   m_Direction: 1
-  m_Center: {x: -0.058893878, y: 0.45809972, z: 0.17433453}
+  m_Center: {x: -0.05889442, y: 0.361581, z: 0.28044564}
 --- !u!114 &6352517723249488352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,13 +128,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetTag: Player
-  speed: 2.4
+  speed: 2
   detectionRange: 10
   patrolSpeed: 0
   knockbackDistance: 1
   knockbackDuration: 0.5
   maxFollowHeightDifference: 7.68
-  uprightSpeed: 2
+  uprightSpeed: 0
 --- !u!114 &2255825092709912329
 MonoBehaviour:
   m_ObjectHideFlags: 0
