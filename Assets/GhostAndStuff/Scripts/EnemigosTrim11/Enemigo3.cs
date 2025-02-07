@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemigo2 : MonoBehaviour
+public class Enemigo3 : MonoBehaviour
 {
     public int rutina;
     public float cronometro;
@@ -12,8 +12,7 @@ public class Enemigo2 : MonoBehaviour
 
     //objetivo que detectara/perseguira el enemigo
     public GameObject target;
-    //boleano del enemigo atacando
-    public bool atacando;
+
     void Start()
     {
         ani = GetComponent<Animator>();
@@ -22,10 +21,9 @@ public class Enemigo2 : MonoBehaviour
 
     public void Comportamiento_Enemigo()
     {
-        // distancia a partir de la cual ya no persigue al enemigo 
-        if (Vector3.Distance(transform.position, target.transform.position) > 10)
+        if (Vector3.Distance(transform.position, target.transform.position) > 20)
         {
-            ani.SetBool("run", false);
+            //ani.SetBool("run", false);
             cronometro += 1 * Time.deltaTime;
             if (cronometro >= 4)
             {
@@ -36,7 +34,7 @@ public class Enemigo2 : MonoBehaviour
             {
                 case 0:
 
-                    ani.SetBool("walk", false);
+                    //ani.SetBool("Walk", false);
                     break;
 
                 case 1:
@@ -48,52 +46,30 @@ public class Enemigo2 : MonoBehaviour
                 case 2:
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 0.5f);
                     transform.Translate(Vector3.forward * 1 * Time.deltaTime);
-                    ani.SetBool("walk", true);
+                   // ani.SetBool("Walk", true);
                     break;
             }
         }
         else
         {
-          if (Vector3.Distance(transform.position, target.transform.position) > 1 && !atacando)
-            {
-                var lookPos = target.transform.position - transform.position;
-                lookPos.y = 0;
-                var rotation = Quaternion.LookRotation(lookPos);
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 2);
-                ani.SetBool("walk", false);
-
-                ani.SetBool("run", true);
-                transform.Translate(Vector3.forward * 2 * Time.deltaTime);
-
-                ani.SetBool("attack", false);
-            }
-            else
-            {
-                ani.SetBool("walk", false);
-                ani.SetBool("run", false);
-
-                ani.SetBool("attack", true);
-                atacando = true;
-
-
-            }
+            var lookPos = target.transform.position - transform.position;
+            lookPos.y = 0;
+            var rotation = Quaternion.LookRotation(lookPos);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 2);
+            //ani.SetBool("Walk", false);
+            //ani.SetBool("run", true);
+            transform.Translate(Vector3.forward * 2 * Time.deltaTime);
         }
 
-
     }
 
-    public void Final_Ani()
-    {
-        ani.SetBool("attack", false);
-        atacando = false;
+
+       
     
-    }
 
-
-
-
-
-
+    
+     
+    
 
 
 private void Update()
