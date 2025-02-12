@@ -56,7 +56,7 @@ public class HealthSyst : MonoBehaviour
     {
         while (isTakingDamage)
         {
-            GameManager.instance.TakeDamagePlayer(10);
+            GameManager.instance.TakeDamagePlayer(1);
 
             // Verificamos si la vida del jugador llega a 0, desde el GameManager
             if (GameManager.instance.playerCurrentHealth <= 0)
