@@ -6982,6 +6982,16 @@ PrefabInstance:
       propertyPath: m_Offset.z
       value: 0.08
       objectReference: {fileID: 0}
+    - target: {fileID: 3731833082690671700, guid: 2c92a6d17a907784abf7100fb17afedc,
+        type: 3}
+      propertyPath: m_FadeFactor
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731833082690671700, guid: 2c92a6d17a907784abf7100fb17afedc,
+        type: 3}
+      propertyPath: m_DecalLayerMask
+      value: 4294967295
+      objectReference: {fileID: 0}
     - target: {fileID: 7676735891059978819, guid: 2c92a6d17a907784abf7100fb17afedc,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -9627,7 +9637,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c22777d6e868e4f2fb421913386b154e, type: 2}
+  - {fileID: 2100000, guid: de015a956f56df04d9b9eaeff1c56c9b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -16991,11 +17001,31 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 532475599}
+    - target: {fileID: 2723481399775635241, guid: d3aa1ca408e162a46a97300d2e8c80aa,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2723481399775635241, guid: d3aa1ca408e162a46a97300d2e8c80aa,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2953689219577993301, guid: d3aa1ca408e162a46a97300d2e8c80aa,
         type: 3}
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1654329204}
+    - target: {fileID: 3054244650281457169, guid: d3aa1ca408e162a46a97300d2e8c80aa,
+        type: 3}
+      propertyPath: m_CastShadows
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3054244650281457169, guid: d3aa1ca408e162a46a97300d2e8c80aa,
+        type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3187926765848478268, guid: d3aa1ca408e162a46a97300d2e8c80aa,
         type: 3}
       propertyPath: m_AnchorMax.x
