@@ -98,11 +98,11 @@ namespace StarterAssets
 			sprint = newSprintState;
 		}
 
-        public void AimInput(bool newAimState)
-        {
-            aim = newAimState;
-        }
-        public void AbsorbInput(bool newAbsorbState)
+		public void AimInput(bool newAimState)
+		{
+			aim = newAimState;
+		}
+		public void AbsorbInput(bool newAbsorbState)
         {
             absorb = newAbsorbState;
         }

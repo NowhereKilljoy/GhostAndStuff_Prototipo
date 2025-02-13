@@ -31,6 +31,22 @@ public class AbsorbMec : MonoBehaviour, IAbsorb
         StarterAssetsInputs = GetComponent<StarterAssetsInputs>();
     }
 
+    void DetectAbsorbed(GameManager.AbsorbType asd, ForAbsorb objAbs)
+    {
+        switch (asd)
+        {
+            case GameManager.AbsorbType.Bullet:
+                GetAmmo();
+                break;
+            case GameManager.AbsorbType.Health:
+                GetHealth();
+                break;
+            case GameManager.AbsorbType.Key:
+                GetKey(objAbs.keyNumber);
+                break;
+        }
+    }
+
     public void GetHealth()
     {
         GameManager.instance.SumHealth(10);
@@ -70,8 +86,8 @@ public class AbsorbMec : MonoBehaviour, IAbsorb
         }
         else
         {
-            //ammoAmount += 1;
-            ammoAmount = 3;
+            ammoAmount += 1;
+            //ammoAmount = 3;
         }
         UpdateAmmo();
     }

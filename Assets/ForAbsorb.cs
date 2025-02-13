@@ -3,10 +3,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Absorb : MonoBehaviour
+public class ForAbsorb : MonoBehaviour
 {
     Animator animator;
     public GameManager.AbsorbType absorb;
+    public float timeAbsorb = 1.5f;
 
     [Tooltip("NO USAR mayor que 2")]
     public int keyNumber;
@@ -26,21 +27,39 @@ public class Absorb : MonoBehaviour
     {
         animator.SetTrigger("Absorb");
         StartCoroutine(WaitEnd());
-    }
 
+    }
     public void AnimInterrupt()
     {
-        transform.localScale = new Vector3(1, 1, 1);
+        StopAllCoroutines();
+        animator.SetTrigger("Cancelled");
+
+        while(transform.localScale.x < 1)
+        {
+            transform.localScale += new Vector3(0.1f,0.1f,0.1f);
+        }
+
+        transform.localScale = Vector3.one;
+
     }
 
     public void AnimEnd()
     {
-        _GetID.Notify(2);
+        if (absorb == GameManager.AbsorbType.Bullet)
+        {
+            _GetID.Notify(2);
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
     }
-    
+
     IEnumerator WaitEnd()
     {
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(timeAbsorb);
         AnimEnd();
+
+        
     }
 }
