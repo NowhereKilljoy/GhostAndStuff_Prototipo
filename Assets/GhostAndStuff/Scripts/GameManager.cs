@@ -7,8 +7,8 @@ public class GameManager : MonoBehaviour
     
     public enum AbsorbType {Bullet,Health,Key}
     
-    public int playerMaxHealth = 100;
-    public int playerCurrentHealth = 100;
+    public int playerMaxHealth = 10;
+    public int playerCurrentHealth = 10;
 
     private void Awake()
     {
