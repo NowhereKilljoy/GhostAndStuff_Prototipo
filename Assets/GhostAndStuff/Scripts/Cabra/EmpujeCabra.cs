@@ -24,7 +24,7 @@ public class EmpujeCabra : MonoBehaviour
     private IEnumerator ApplyPush(CharacterController characterController)
         {
             // Este Script es similar a los jumpads y las trampas de empuje pero solo aplica fuerza en la dirección de X 
-            Vector3 pushDirection = transform.forward; 
+            Vector3 pushDirection = transform.forward *1; 
             float elapsedTime = 0f;
             float currentForce = 0f;
 
