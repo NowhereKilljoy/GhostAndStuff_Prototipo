@@ -23,7 +23,7 @@ namespace StarterAssets
 
         public float dashDistance = 5f;       // Distancia que recorrerá el dash
         public float dashDuration = 0.2f;     // Tiempo que durará el dash
-        public float dashCooldown = 1f;       // Tiempo de cooldown antes de que se pueda usar el dash otra vez
+        public float dashCooldown = 4f;       // Tiempo de cooldown antes de que se pueda usar el dash otra vez
 
 
         [Tooltip("How fast the character turns to face movement direction")]
