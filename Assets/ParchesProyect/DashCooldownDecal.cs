@@ -18,7 +18,7 @@ public class DashCooldownDecal : MonoBehaviour
     [SerializeField] private ThirdPersonController playerController;
 
     private float cooldownTimer = 0f;
-    private bool isOnCooldown = false;
+    public bool isOnCooldown = true;
     private Material instancedMaterial;
 
     private static readonly int BaseMapProperty = Shader.PropertyToID("_BaseMap");
@@ -36,9 +36,10 @@ public class DashCooldownDecal : MonoBehaviour
 
         if (playerController == null)
         {
-            playerController = FindObjectOfType<ThirdPersonController>();
+            
             if (playerController == null)
             {
+                              
                 Debug.LogError("ThirdPersonController not found! Please assign it in the inspector.");
             }
         }
@@ -60,27 +61,19 @@ public class DashCooldownDecal : MonoBehaviour
         if (playerController != null)
         {
             // Check if the player is currently on dash cooldown
-            bool onCooldown = (Time.time < GetNextDashTime());
+            isOnCooldown = (Time.time < playerController.nextDashTime);
 
-            if (onCooldown)
+            if (isOnCooldown)
             {
-                // Player is on cooldown
-                if (!isOnCooldown)
-                {
-                    // Just entered cooldown state
-                    isOnCooldown = true;
-                    instancedMaterial.SetTexture(BaseMapProperty, coolingDownTexture);
-                }
+                                    instancedMaterial.SetTexture(BaseMapProperty, coolingDownTexture);
+                
             }
             else
             {
                 // Player is ready to dash
-                if (isOnCooldown)
-                {
-                    // Just exited cooldown state
-                    isOnCooldown = false;
+   
                     instancedMaterial.SetTexture(BaseMapProperty, readyTexture);
-                }
+              
             }
         }
     }
@@ -113,7 +106,7 @@ public class DashCooldownDecal : MonoBehaviour
     {
         if (playerController != null)
         {
-            return Time.time >= GetNextDashTime();
+            return Time.time < playerController.nextDashTime;
         }
         return false;
     }

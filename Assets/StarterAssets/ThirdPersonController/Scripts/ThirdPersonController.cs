@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 #endif
@@ -119,7 +120,7 @@ namespace StarterAssets
 
         public bool isDashing = false;       // Indica si el personaje está haciendo dash
         private float dashEndTime;            // Tiempo cuando terminará el dash
-        private float nextDashTime;           // Tiempo en que se puede hacer el próximo dash
+        public float nextDashTime;           // Tiempo en que se puede hacer el próximo dash
         private Vector3 dashDirection;        // Dirección del dash
 
         private bool IsCurrentDeviceMouse
@@ -330,6 +331,7 @@ namespace StarterAssets
             }
         }
 
+        
         void StartDash()
         {
             isDashing = true;
