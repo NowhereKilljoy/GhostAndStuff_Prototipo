@@ -1,8 +1,10 @@
 using UnityEngine;
 
-public class Checkpoint : MonoBehaviour
+
+public class CheckPoint : MonoBehaviour
 {
-    public GameObject activadorVisual;
+    public GameObject onSpawner;
+    public GameObject offSpawner;
 
 
 
@@ -18,6 +20,9 @@ public class Checkpoint : MonoBehaviour
             RespawnManager respawnManager = FindObjectOfType<RespawnManager>();
             respawnManager.UpdateRespawnPoint(this.transform);
             Debug.Log("Checkpoint alcanzado en: " + transform.name);
+
+            onSpawner.SetActive(true);
+            offSpawner.SetActive(false);
         }
     }
 }
