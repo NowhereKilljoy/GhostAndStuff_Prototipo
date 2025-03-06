@@ -13,8 +13,13 @@ namespace StarterAssets
 #if ENABLE_INPUT_SYSTEM 
     [RequireComponent(typeof(PlayerInput))]
 #endif
+    
     public class ThirdPersonController : MonoBehaviour
     {
+
+        public static ThirdPersonController Instance { get; private set; }
+
+
         [Header("Player")]
         [Tooltip("Move speed of the character in m/s")]
         public float MoveSpeed = 2.0f;
@@ -123,6 +128,7 @@ namespace StarterAssets
         public float nextDashTime;           // Tiempo en que se puede hacer el próximo dash
         private Vector3 dashDirection;        // Dirección del dash
 
+        private bool canDash = true;
         private bool IsCurrentDeviceMouse
         {
             get
@@ -143,6 +149,16 @@ namespace StarterAssets
             {
                 _mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
             }
+            if (Instance == null)
+            {
+                Instance = this;
+                DontDestroyOnLoad(Instance);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+
         }
 
         private void Start()
@@ -324,7 +340,7 @@ namespace StarterAssets
         void HandleDash()
         {
             // Comprobamos si se ha presionado la tecla de dash y si no estamos en cooldown
-            if (_input.dash&& !isDashing && Time.time >= nextDashTime)
+            if (_input.dash && canDash && !isDashing && Time.time >= nextDashTime)
             {
                 Debug.Log("Dash activado");
                 StartDash();
@@ -335,6 +351,7 @@ namespace StarterAssets
         void StartDash()
         {
             isDashing = true;
+            canDash = false;
             dashEndTime = Time.time + dashDuration;  // El dash dura un periodo fijo
             nextDashTime = Time.time + dashCooldown; // Cooldown antes de hacer otro dash
 
@@ -349,7 +366,13 @@ namespace StarterAssets
         {
             _input.dash = false;
             isDashing = false;
+            Invoke(nameof(ResetCanDash), dashCooldown);
             Debug.Log("Dash finalizado");
+        }
+
+        public void ResetCanDash()
+        {
+            canDash = true;
         }
 
 
