@@ -11523,15 +11523,25 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 741778271}
     m_Modifications:
+    - target: {fileID: 3728524551651679682, guid: bc5a80f59d21125408793f3d5f8f7084,
+        type: 3}
+      propertyPath: decalMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: df72411ac2761b44e86be5a8ea0f0a22, type: 2}
+    - target: {fileID: 3728524551651679682, guid: bc5a80f59d21125408793f3d5f8f7084,
+        type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 1985730073}
     - target: {fileID: 3731833082690671700, guid: bc5a80f59d21125408793f3d5f8f7084,
         type: 3}
       propertyPath: m_Size.x
-      value: 0.04
+      value: 0.12
       objectReference: {fileID: 0}
     - target: {fileID: 3731833082690671700, guid: bc5a80f59d21125408793f3d5f8f7084,
         type: 3}
       propertyPath: m_Size.y
-      value: 0.04
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 3731833082690671700, guid: bc5a80f59d21125408793f3d5f8f7084,
         type: 3}
@@ -11545,23 +11555,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3731833082690671700, guid: bc5a80f59d21125408793f3d5f8f7084,
         type: 3}
+      propertyPath: m_Offset.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3731833082690671700, guid: bc5a80f59d21125408793f3d5f8f7084,
+        type: 3}
       propertyPath: m_Offset.z
       value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7676735891059978819, guid: bc5a80f59d21125408793f3d5f8f7084,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.237
+      value: 0.011
       objectReference: {fileID: 0}
     - target: {fileID: 7676735891059978819, guid: bc5a80f59d21125408793f3d5f8f7084,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.052
+      value: -0.073
       objectReference: {fileID: 0}
     - target: {fileID: 7676735891059978819, guid: bc5a80f59d21125408793f3d5f8f7084,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.077
+      value: -0.159
       objectReference: {fileID: 0}
     - target: {fileID: 7676735891059978819, guid: bc5a80f59d21125408793f3d5f8f7084,
         type: 3}
@@ -16227,6 +16242,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3826883647431948446}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1985730073 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1641205231363113626, guid: 33481939a6e52764bbdc5100d1722472,
+    type: 3}
+  m_PrefabInstance: {fileID: 3826883647431948446}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1259413548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26e54e5a728a9234ab24fcf1460ed8a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1986471344
 GameObject:
   m_ObjectHideFlags: 0
@@ -17488,7 +17515,7 @@ PrefabInstance:
     - target: {fileID: 1641205231363113626, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
       propertyPath: dashCooldown
-      value: 4
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2012675272501171761, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
@@ -17575,6 +17602,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -7.4609947
       objectReference: {fileID: 0}
+    - target: {fileID: 6094682660360842376, guid: 33481939a6e52764bbdc5100d1722472,
+        type: 3}
+      propertyPath: healthMaterials.Array.data[8]
+      value: 
+      objectReference: {fileID: 2100000, guid: 120e1ff74eb79214e912d0a74a7c0e68, type: 2}
     - target: {fileID: 7455685009445886802, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
       propertyPath: m_Mesh

@@ -66,51 +66,19 @@ public class DashCooldownDecal : MonoBehaviour
             // Check if the player is currently on dash cooldown
             isOnCooldown = (Time.time < playerController.nextDashTime);
 
-            //if (ThirdPersonController.Instance.ResetCanDash )
-            //{
-            //    instancedMaterial.SetTexture(BaseMapProperty, readyTexture);
+            if (ThirdPersonController.Instance.canDash)
+            {
+                instancedMaterial.SetTexture(BaseMapProperty, readyTexture);
 
-            //}
-            //else
-            //{
-            //    // Player is ready to dash
+            }
+            else
+            {
+                // Player is ready to dash
 
-            //    instancedMaterial.SetTexture(BaseMapProperty, coolingDownTexture);
+                instancedMaterial.SetTexture(BaseMapProperty, coolingDownTexture);
 
-            //}
+            }
         }
     }
 
-    // Helper method to access the nextDashTime from the ThirdPersonController
-    private float GetNextDashTime()
-    {
-        // Use reflection to access the private nextDashTime field from ThirdPersonController
-        var field = playerController.GetType().GetField("nextDashTime",
-            System.Reflection.BindingFlags.NonPublic |
-            System.Reflection.BindingFlags.Instance);
-
-        if (field != null)
-        {
-            return (float)field.GetValue(playerController);
-        }
-
-        // Fallback method if reflection fails
-        // Calculate based on the public isDashing property and dashCooldown value
-        if (playerController.isDashing)
-        {
-            return Time.time + playerController.dashCooldown;
-        }
-
-        return 0f; // If we can't determine, assume ready
-    }
-
-    // Optional: Helper method to directly get the dash status
-    public bool IsDashReady()
-    {
-        if (playerController != null)
-        {
-            return Time.time < playerController.nextDashTime;
-        }
-        return false;
-    }
 }
