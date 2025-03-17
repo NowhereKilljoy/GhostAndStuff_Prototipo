@@ -5528,6 +5528,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2_2
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7366,6 +7371,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2_12
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -7521,6 +7531,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2_8
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9187,6 +9202,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2_6
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -9793,6 +9813,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2_13
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10927,6 +10952,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2_7
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13455,6 +13485,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2_1
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -19662,7 +19697,6 @@ GameObject:
   m_Component:
   - component: {fileID: 777040517}
   - component: {fileID: 777040516}
-  - component: {fileID: 777040515}
   m_Layer: 0
   m_Name: SceneReset
   m_TagString: Untagged
@@ -19670,19 +19704,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &777040515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 777040514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 126ce55cc48153a448c3b5940a5593d1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Escena: 3
 --- !u!65 &777040516
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34431,6 +34452,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2_10
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -34610,6 +34636,109 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+--- !u!1001 &1164353001
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3364173005077841650, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_Name
+      value: PASARNIVEL2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3566651810431728187, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: nombreDeLaEscena
+      value: Menu1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660911974829102694, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.8926623
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660911974829102694, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 32.06187
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660911974829102694, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 26.73748
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660911974829102694, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660911974829102694, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660911974829102694, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660911974829102694, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660911974829102694, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660911974829102694, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4660911974829102694, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151383063756032789, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.1779536
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151383063756032789, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.31734487
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151383063756032789, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 0.49663308
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151383063756032789, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_Center.x
+      value: 0.011451766
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151383063756032789, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_Center.y
+      value: -0.34133002
+      objectReference: {fileID: 0}
+    - target: {fileID: 7151383063756032789, guid: 7a4a45c7811197a479fc84426abf7336,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -0.034711286
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 7a4a45c7811197a479fc84426abf7336, type: 3}
 --- !u!1 &1166008477
 GameObject:
   m_ObjectHideFlags: 0
@@ -36043,6 +36172,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2_4
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -37050,6 +37184,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2_5
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -40512,6 +40651,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45312,6 +45456,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2_14
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -51720,6 +51869,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2_11
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -75753,6 +75907,12 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8303047214091272479, guid: 46211b8157b057344bcb99ae7dae0551, type: 3}
+--- !u!4 &1885872251 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8742335144190147396, guid: 417dce4f821131f4f8307c244e0fee1c,
+    type: 3}
+  m_PrefabInstance: {fileID: 6128496664221867765}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &1886077047
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -80042,6 +80202,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2_9
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -81737,6 +81902,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: CorazonVidaV2_3
       objectReference: {fileID: 0}
+    - target: {fileID: 3793874005954579938, guid: f0f89b39fee0e4049922072525f09e35,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1885872251}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -83204,3 +83374,4 @@ SceneRoots:
   - {fileID: 294607442}
   - {fileID: 389372081}
   - {fileID: 1589525125}
+  - {fileID: 1164353001}
