@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemigo2 : MonoBehaviour
+public class ComportamientoEnemigoBASE : MonoBehaviour
 {
     public int rutina;
     public float cronometro;
