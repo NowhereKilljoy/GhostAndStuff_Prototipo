@@ -8,7 +8,7 @@ namespace StarterAssets
 {
     public class StarterAssetsInputs : MonoBehaviour
     {
-        [Header("Character Input Values")]
+        [Header("Character Input Values")] 
         public Vector2 move;
         public Vector2 look;
         public bool jump;
@@ -28,7 +28,7 @@ namespace StarterAssets
         public bool cursorLocked = true;
         public bool cursorInputForLook = true;
 
-        [Header("Audio Sources")] // 🎧 Aquí los audios
+        [Header("Audio Sources")] // Aqui se declaran los audios
         public AudioSource jumpAudio;
         public AudioSource shootAudio;
         public AudioSource absorbAudio;

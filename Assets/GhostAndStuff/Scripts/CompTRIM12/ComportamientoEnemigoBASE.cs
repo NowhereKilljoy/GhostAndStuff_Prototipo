@@ -15,10 +15,22 @@ public class ComportamientoEnemigoBASE : MonoBehaviour
     private float distanciaAtaque = 1.5f;
     private float distanciaMaxima = 10f;
 
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip idleClip;
+    public AudioClip walkClip;
+    public AudioClip runClip;
+    public AudioClip attackClip;
+
+    private AudioClip currentClip;
+
     void Start()
     {
         ani = GetComponent<Animator>();
         target = GameObject.Find("PlayerArmature");
+
+        // Reproducir sonido idle desde inicio
+        PlaySound(idleClip);
     }
 
     public void Comportamiento_Enemigo()
@@ -42,6 +54,7 @@ public class ComportamientoEnemigoBASE : MonoBehaviour
             {
                 case 0:
                     ani.SetBool("walk", false);
+                    PlaySound(idleClip);
                     break;
 
                 case 1:
@@ -54,6 +67,7 @@ public class ComportamientoEnemigoBASE : MonoBehaviour
                     transform.rotation = Quaternion.RotateTowards(transform.rotation, angulo, 0.5f);
                     transform.Translate(Vector3.forward * 1 * Time.deltaTime);
                     ani.SetBool("walk", true);
+                    PlaySound(walkClip);
                     break;
             }
         }
@@ -67,8 +81,9 @@ public class ComportamientoEnemigoBASE : MonoBehaviour
             ani.SetBool("walk", false);
             ani.SetBool("run", true);
             ani.SetBool("attack", false);
-
             transform.Translate(Vector3.forward * 2 * Time.deltaTime);
+
+            PlaySound(runClip);
         }
         else if (distancia <= distanciaAtaque)
         {
@@ -80,16 +95,30 @@ public class ComportamientoEnemigoBASE : MonoBehaviour
                 atacando = true;
                 ani.SetBool("attack", true);
                 StartCoroutine(FinalizarAtaque());
+
+                PlaySound(attackClip);
             }
         }
     }
 
-    // Este método se llama automáticamente cuando termina el ataque
     private IEnumerator FinalizarAtaque()
     {
-        yield return new WaitForSeconds(1.0f); // Ajusta según duración real de la animación
+        yield return new WaitForSeconds(1.0f); // Ajustar según la duración real de la animación
         ani.SetBool("attack", false);
         atacando = false;
+    }
+
+    private void PlaySound(AudioClip clip)
+    {
+        if (audioSource == null || clip == null) return;
+
+        if (currentClip != clip)
+        {
+            audioSource.clip = clip;
+            audioSource.loop = true;
+            audioSource.Play();
+            currentClip = clip;
+        }
     }
 
     private void Update()
