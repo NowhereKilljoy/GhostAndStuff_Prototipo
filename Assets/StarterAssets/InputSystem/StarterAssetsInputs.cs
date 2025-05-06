@@ -28,6 +28,11 @@ namespace StarterAssets
         public bool cursorLocked = true;
         public bool cursorInputForLook = true;
 
+        [Header("Audio Sources")] // 🎧 Aquí los audios
+        public AudioSource jumpAudio;
+        public AudioSource shootAudio;
+        public AudioSource absorbAudio;
+
         private void Awake()
         {
             _animator = GetComponent<Animator>();
@@ -49,7 +54,13 @@ namespace StarterAssets
 
         public void OnJump(InputValue value)
         {
-            JumpInput(value.isPressed);
+            bool isJumping = value.isPressed;
+            JumpInput(isJumping);
+
+            if (isJumping && jumpAudio != null && !jumpAudio.isPlaying)
+            {
+                jumpAudio.Play();
+            }
         }
 
         public void OnSprint(InputValue value)
@@ -68,20 +79,32 @@ namespace StarterAssets
 
         public void OnShoot(InputValue value)
         {
-            ShootInput(value.isPressed);
+            bool isShooting = value.isPressed;
+            ShootInput(isShooting);
 
             Debug.Log("Shoot");
             _animator.SetBool("Shoot", true);
             StartCoroutine(ResetBool("Shoot"));
+
+            if (isShooting && shootAudio != null)
+            {
+                shootAudio.Play();
+            }
         }
 
         public void OnAbsorb(InputValue value)
         {
-            AbsorbInput(value.isPressed);
+            bool isAbsorbing = value.isPressed;
+            AbsorbInput(isAbsorbing);
 
             Debug.Log("Absorb");
             _animator.SetBool("Absorb", true);
             StartCoroutine(ResetBool("Absorb"));
+
+            if (isAbsorbing && absorbAudio != null)
+            {
+                absorbAudio.Play();
+            }
         }
 
         public void OnDash(InputValue value)
@@ -154,7 +177,6 @@ namespace StarterAssets
             Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
         }
 
-        // 🔥 Método general para resetear cualquier Bool en el Animator
         private System.Collections.IEnumerator ResetBool(string boolName)
         {
             yield return new WaitForSeconds(0.1f);
