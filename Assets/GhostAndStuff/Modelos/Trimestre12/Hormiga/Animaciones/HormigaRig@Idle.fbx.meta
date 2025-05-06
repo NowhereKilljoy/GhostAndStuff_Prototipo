@@ -44,7 +44,7 @@ ModelImporter:
       cycleOffset: 0
       loop: 1
       hasAdditiveReferencePose: 0
-      loopTime: 0
+      loopTime: 1
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -157,75 +157,15 @@ ModelImporter:
       position: {x: 1.11022296e-17, y: 0.27585614, z: -0.07347854}
       rotation: {x: 0.7060097, y: 0.03937419, z: -0.7060097, w: -0.03937419}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:hip_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:spine_A_jnt
-      position: {x: -0, y: 0, z: 1.11022296e-17}
-      rotation: {x: 0.26821086, y: 0.96336025, z: -4.2565622e-17, w: -7.541198e-17}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:tail_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:hip_jnt
-      position: {x: -0.19652145, y: 7.105427e-17, z: -1.11022296e-17}
-      rotation: {x: -7.513539e-15, y: -3.2339887e-15, z: -0.3831614, w: 0.92368144}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:tailLong_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:tail_jnt
-      position: {x: -0.11815928, y: -0.0013672137, z: -9.482596e-16}
-      rotation: {x: 0, y: 0, z: 0.05285477, w: 0.9986022}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:tailEnd_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:tailLong_jnt
-      position: {x: -0.18510951, y: 0, z: 8.108022e-18}
-      rotation: {x: 0, y: -0, z: -6.938894e-18, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: Rigg_Hormiga_PintadoDePesos:spine_B_jnt
       parentName: Rigg_Hormiga_PintadoDePesos:spine_A_jnt
       position: {x: -0.19516702, y: 3.5527136e-17, z: -1.11022296e-17}
-      rotation: {x: -2.8012e-40, y: 3.6793717e-32, z: 0.11219313, w: 0.99368644}
+      rotation: {x: -0, y: -0, z: 0.5775668, w: 0.81634337}
       scale: {x: 1, y: 1, z: 1}
     - name: Rigg_Hormiga_PintadoDePesos:spine_C_jnt
       parentName: Rigg_Hormiga_PintadoDePesos:spine_B_jnt
       position: {x: -0.107844025, y: -1.0658141e-16, z: -1.11022296e-17}
       rotation: {x: 0, y: 0, z: 0.18660831, w: 0.9824344}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:spine_C_jnt
-      position: {x: 0.05964014, y: 0.02317548, z: 0.050971296}
-      rotation: {x: -0.18170483, y: 0.559653, z: 0.4919917, w: 0.64165103}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_jnt
-      position: {x: -0.056236375, y: -0.00000013677753, z: -0.0000006369351}
-      rotation: {x: -0.024161156, y: 0.17434384, z: -0.15724191, w: 0.97174865}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_forearm_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_jnt
-      position: {x: -0.07765932, y: -0.00000043495092, z: 0.00000053474537}
-      rotation: {x: 0.0066777198, y: 0.035745934, z: -0.013045354, w: 0.99925345}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_handEnd_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_forearm_jnt
-      position: {x: -0.07858719, y: -0.00000054697983, z: -0.0000009466609}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_front_shoulder_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:spine_C_jnt
-      position: {x: 0.014945562, y: 0.046948995, z: 0.05097127}
-      rotation: {x: -0.17727683, y: 0.5610714, z: 0.49704665, w: 0.63774335}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_front_arm_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:L_front_shoulder_jnt
-      position: {x: -0.056236766, y: -3.5527136e-17, z: 1.0302869e-15}
-      rotation: {x: -0.02661897, y: 0.17398554, z: -0.1709389, w: 0.969433}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_front_forearm_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:L_front_arm_jnt
-      position: {x: -0.07765847, y: 3.5527136e-17, z: -7.105427e-16}
-      rotation: {x: 0.004449609, y: 0.036091056, z: -0.0749468, w: 0.9965243}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_front_handEnd_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:L_front_forearm_jnt
-      position: {x: -0.078586765, y: 2.9198407e-17, z: -1.9157885e-17}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Rigg_Hormiga_PintadoDePesos:neeck_jnt
       parentName: Rigg_Hormiga_PintadoDePesos:spine_C_jnt
@@ -262,14 +202,19 @@ ModelImporter:
       position: {x: -0.089999996, y: 0, z: 4.2632563e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_eye_jnt
+    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_A_jnt
       parentName: Rigg_Hormiga_PintadoDePesos:head_jnt
-      position: {x: -0.1832341, y: 0.10246805, z: 0.0534884}
-      rotation: {x: 0.8834087, y: -0.46806818, z: -0.015139602, w: 0.016492503}
+      position: {x: -0.2234415, y: -0.011101426, z: -0.0854496}
+      rotation: {x: 0.01928213, y: -0.17069872, z: 0.110577576, w: 0.97890896}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_eyeEnd_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:L_eye_jnt
-      position: {x: -0.027497368, y: -7.105427e-17, z: -1.110223e-18}
+    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_B_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:R_antenna_A_jnt
+      position: {x: -0.06406142, y: -7.105427e-17, z: -8.171241e-16}
+      rotation: {x: -0.00010119271, y: -0.0021202092, z: -0.00027947107, w: 0.99999774}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_antennaEnd_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:R_antenna_B_jnt
+      position: {x: -0.10828343, y: 1.2446108e-16, z: -7.1214496e-16}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Rigg_Hormiga_PintadoDePesos:L_mouth_A_jnt
@@ -292,31 +237,6 @@ ModelImporter:
       position: {x: -0.065, y: -2.2128524e-17, z: 1.5852956e-17}
       rotation: {x: 0, y: -0, z: -2.3852448e-15, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_A_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:head_jnt
-      position: {x: -0.2234415, y: -0.011101426, z: -0.0854496}
-      rotation: {x: 0.01928213, y: -0.17069872, z: 0.110577576, w: 0.97890896}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_B_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:R_antenna_A_jnt
-      position: {x: -0.06406142, y: -7.105427e-17, z: -8.171241e-16}
-      rotation: {x: -0.00010119271, y: -0.0021202092, z: -0.00027947107, w: 0.99999774}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_antennaEnd_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:R_antenna_B_jnt
-      position: {x: -0.10828343, y: 1.2446108e-16, z: -7.1214496e-16}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_eye_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:head_jnt
-      position: {x: -0.1832341, y: 0.10246805, z: -0.0545116}
-      rotation: {x: 0.8833313, y: -0.46823907, z: -0.0075004483, w: 0.020536415}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_eyeEnd_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:R_eye_jnt
-      position: {x: -0.027497368, y: 0, z: -7.216449e-18}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
     - name: Rigg_Hormiga_PintadoDePesos:R_mouth_A_jnt
       parentName: Rigg_Hormiga_PintadoDePesos:head_jnt
       position: {x: -0.09664544, y: 0.08085418, z: -0.13}
@@ -337,24 +257,44 @@ ModelImporter:
       position: {x: 0.06500047, y: -0.0000006375343, z: 0.00000020748598}
       rotation: {x: 0, y: -0, z: -2.3852448e-15, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_jnt
+    - name: Rigg_Hormiga_PintadoDePesos:L_eye_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:head_jnt
+      position: {x: -0.1832341, y: 0.10246805, z: 0.0534884}
+      rotation: {x: 0.8834087, y: -0.46806818, z: -0.015139602, w: 0.016492503}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_eyeEnd_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:L_eye_jnt
+      position: {x: -0.027497368, y: -7.105427e-17, z: -1.110223e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_eye_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:head_jnt
+      position: {x: -0.1832341, y: 0.10246805, z: -0.0545116}
+      rotation: {x: 0.8833313, y: -0.46823907, z: -0.0075004483, w: 0.020536415}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_eyeEnd_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:R_eye_jnt
+      position: {x: -0.027497368, y: 0, z: -7.216449e-18}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_front_shoulder_jnt
       parentName: Rigg_Hormiga_PintadoDePesos:spine_C_jnt
-      position: {x: 0.059640136, y: 0.023175482, z: -0.050971296}
-      rotation: {x: -0.559653, y: -0.18170483, z: 0.64165103, w: -0.4919917}
+      position: {x: 0.014945562, y: 0.046948995, z: 0.05097127}
+      rotation: {x: -0.17727683, y: 0.5610714, z: 0.49704665, w: 0.63774335}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_jnt
-      position: {x: 0.056236822, y: 0.00000032819833, z: 0.00000017689041}
-      rotation: {x: -0.024161156, y: 0.17434384, z: -0.15724191, w: 0.97174865}
+    - name: Rigg_Hormiga_PintadoDePesos:L_front_arm_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:L_front_shoulder_jnt
+      position: {x: -0.056236766, y: -3.5527136e-17, z: 1.0302869e-15}
+      rotation: {x: -0.02661897, y: 0.17398554, z: -0.1709389, w: 0.969433}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_forearm_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_jnt
-      position: {x: 0.077658385, y: -7.105427e-17, z: 0}
-      rotation: {x: 0.0066777198, y: 0.035745934, z: -0.013045354, w: 0.99925345}
+    - name: Rigg_Hormiga_PintadoDePesos:L_front_forearm_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:L_front_arm_jnt
+      position: {x: -0.07765847, y: 3.5527136e-17, z: -7.105427e-16}
+      rotation: {x: 0.004449609, y: 0.036091056, z: -0.0749468, w: 0.9965243}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_handEnd_jnt
-      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_forearm_jnt
-      position: {x: 0.078587174, y: 0.00000049010663, z: 0.0000008126451}
+    - name: Rigg_Hormiga_PintadoDePesos:L_front_handEnd_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:L_front_forearm_jnt
+      position: {x: -0.078586765, y: 2.9198407e-17, z: -1.9157885e-17}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Rigg_Hormiga_PintadoDePesos:R_front_shoulder_jnt
@@ -376,6 +316,66 @@ ModelImporter:
       parentName: Rigg_Hormiga_PintadoDePesos:R_front_forearm_jnt
       position: {x: 0.078587174, y: 0.00000049010663, z: 0.0000008126451}
       rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:spine_C_jnt
+      position: {x: 0.059640136, y: 0.023175482, z: -0.050971296}
+      rotation: {x: -0.5791787, y: -0.23015937, z: 0.6379064, w: -0.45238727}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_jnt
+      position: {x: 0.056236822, y: 0.00000032819833, z: 0.00000017689041}
+      rotation: {x: -0.025089042, y: 0.14756276, z: -0.13723163, w: 0.9791646}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_forearm_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_jnt
+      position: {x: 0.077658385, y: -7.105427e-17, z: 0}
+      rotation: {x: 0.00688199, y: 0.0026850554, z: 0.0045944327, w: 0.99996215}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_handEnd_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_forearm_jnt
+      position: {x: 0.078587174, y: 0.00000049010663, z: 0.0000008126451}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:spine_C_jnt
+      position: {x: 0.05964014, y: 0.02317548, z: 0.050971296}
+      rotation: {x: -0.23016047, y: 0.57918024, z: 0.45238605, w: 0.63790536}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_jnt
+      position: {x: -0.056236375, y: -0.00000013677753, z: -0.0000006369351}
+      rotation: {x: -0.025089312, y: 0.14755838, z: -0.13723129, w: 0.97916526}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_forearm_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_jnt
+      position: {x: -0.07765932, y: -0.00000043495092, z: 0.00000053474537}
+      rotation: {x: 0.0068819197, y: 0.0026872905, z: 0.004593747, w: 0.99996215}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_handEnd_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_forearm_jnt
+      position: {x: -0.07858719, y: -0.00000054697983, z: -0.0000009466609}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:hip_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:spine_A_jnt
+      position: {x: -0, y: 0, z: 1.11022296e-17}
+      rotation: {x: 0.26821086, y: 0.96336025, z: -4.2565622e-17, w: -7.541198e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:tail_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:hip_jnt
+      position: {x: -0.19652145, y: 7.105427e-17, z: -1.11022296e-17}
+      rotation: {x: -0.011047224, y: -0.027526982, z: -0.8534384, w: 0.5203491}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:tailLong_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:tail_jnt
+      position: {x: -0.11815928, y: -0.0013672137, z: -9.482596e-16}
+      rotation: {x: 0, y: 0, z: 0.05285477, w: 0.9986022}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:tailEnd_jnt
+      parentName: Rigg_Hormiga_PintadoDePesos:tailLong_jnt
+      position: {x: -0.18510951, y: 0, z: 8.108022e-18}
+      rotation: {x: 0, y: -0, z: -6.938894e-18, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Rigg_Hormiga_PintadoDePesos:MASTER_ctrl_offset
       parentName: Rigg_Hormiga_PintadoDePesos:RIG
@@ -494,96 +494,6 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Rigg_Hormiga_PintadoDePesos:spine_C_ctrl
       parentName: Rigg_Hormiga_PintadoDePesos:spine_C_ctrl_auto
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_ctrl_offset
-      parentName: Rigg_Hormiga_PintadoDePesos:spine_C_ctrl
-      position: {x: 0.05964014, y: 0.02317548, z: 0.050971296}
-      rotation: {x: -0.18170482, y: 0.55965304, z: 0.49199164, w: 0.6416511}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_ctrl_auto
-      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_ctrl_offset
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_ctrl
-      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_ctrl_auto
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_ctrl_offset
-      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_ctrl
-      position: {x: -0.056236375, y: -0.00000013677753, z: -0.0000006369351}
-      rotation: {x: -0.024161154, y: 0.17434384, z: -0.15724191, w: 0.97174865}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_ctrl_auto
-      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_ctrl_offset
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_ctrl
-      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_ctrl_auto
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_forearm_ctrl_offset
-      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_ctrl
-      position: {x: -0.07765932, y: -0.00000043495092, z: 0.00000053474537}
-      rotation: {x: 0.0066777198, y: 0.03574593, z: -0.013045353, w: 0.99925345}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_forearm_ctrl_auto
-      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_forearm_ctrl_offset
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_forearm_ctrl
-      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_forearm_ctrl_auto
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_fornt_shoulder_ctrl_offset
-      parentName: Rigg_Hormiga_PintadoDePesos:spine_C_ctrl
-      position: {x: 0.014945562, y: 0.046948995, z: 0.05097127}
-      rotation: {x: -0.1772768, y: 0.56107134, z: 0.49704662, w: 0.63774335}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_front_shoulder_ctrl_auto
-      parentName: Rigg_Hormiga_PintadoDePesos:L_fornt_shoulder_ctrl_offset
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_front_shoulder_ctrl
-      parentName: Rigg_Hormiga_PintadoDePesos:L_front_shoulder_ctrl_auto
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_front_arm_ctrl_offset
-      parentName: Rigg_Hormiga_PintadoDePesos:L_front_shoulder_ctrl
-      position: {x: -0.056236766, y: -4.223851e-17, z: 9.774574e-16}
-      rotation: {x: -0.02661897, y: 0.17398553, z: -0.17093891, w: 0.969433}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_front_arm_ctrl_auto
-      parentName: Rigg_Hormiga_PintadoDePesos:L_front_arm_ctrl_offset
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_front_arm_ctrl
-      parentName: Rigg_Hormiga_PintadoDePesos:L_front_arm_ctrl_auto
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_front_forearm_ctrl_offset
-      parentName: Rigg_Hormiga_PintadoDePesos:L_front_arm_ctrl
-      position: {x: -0.07765847, y: 2.3352892e-17, z: -7.83852e-16}
-      rotation: {x: 0.004449609, y: 0.03609106, z: -0.0749468, w: 0.9965243}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_front_forearm_ctrl_auto
-      parentName: Rigg_Hormiga_PintadoDePesos:L_front_forearm_ctrl_offset
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:L_front_forearm_ctrl
-      parentName: Rigg_Hormiga_PintadoDePesos:L_front_forearm_ctrl_auto
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -707,6 +617,36 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_A_ctrl_offset
+      parentName: Rigg_Hormiga_PintadoDePesos:head_ctrl
+      position: {x: -0.2234415, y: -0.011101426, z: -0.0854496}
+      rotation: {x: 0.01928213, y: -0.17069872, z: 0.110577576, w: 0.97890896}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_A_ctrl_auto
+      parentName: Rigg_Hormiga_PintadoDePesos:R_antenna_A_ctrl_offset
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_A_ctrl
+      parentName: Rigg_Hormiga_PintadoDePesos:R_antenna_A_ctrl_auto
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_B_ctrl_offset
+      parentName: Rigg_Hormiga_PintadoDePesos:R_antenna_A_ctrl
+      position: {x: -0.06406142, y: 3.570071e-17, z: -8.704225e-16}
+      rotation: {x: -0.00010119271, y: -0.0021202094, z: -0.0002794711, w: 0.99999774}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_B_ctrl_auto
+      parentName: Rigg_Hormiga_PintadoDePesos:R_antenna_B_ctrl_offset
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_B_ctrl
+      parentName: Rigg_Hormiga_PintadoDePesos:R_antenna_B_ctrl_auto
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     - name: Rigg_Hormiga_PintadoDePesos:L_mouth_A_ctrl_offset
       parentName: Rigg_Hormiga_PintadoDePesos:head_ctrl
       position: {x: -0.09664544, y: 0.08085418, z: 0.12978174}
@@ -749,36 +689,6 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: Rigg_Hormiga_PintadoDePesos:L_mouth_C_ctrl
       parentName: Rigg_Hormiga_PintadoDePesos:L_mouth_C_ctrl_auto
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_A_ctrl_offset
-      parentName: Rigg_Hormiga_PintadoDePesos:head_ctrl
-      position: {x: -0.2234415, y: -0.011101426, z: -0.0854496}
-      rotation: {x: 0.01928213, y: -0.17069872, z: 0.110577576, w: 0.97890896}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_A_ctrl_auto
-      parentName: Rigg_Hormiga_PintadoDePesos:R_antenna_A_ctrl_offset
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_A_ctrl
-      parentName: Rigg_Hormiga_PintadoDePesos:R_antenna_A_ctrl_auto
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_B_ctrl_offset
-      parentName: Rigg_Hormiga_PintadoDePesos:R_antenna_A_ctrl
-      position: {x: -0.06406142, y: 3.570071e-17, z: -8.704225e-16}
-      rotation: {x: -0.00010119271, y: -0.0021202094, z: -0.0002794711, w: 0.99999774}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_B_ctrl_auto
-      parentName: Rigg_Hormiga_PintadoDePesos:R_antenna_B_ctrl_offset
-      position: {x: -0, y: 0, z: 0}
-      rotation: {x: 0, y: -0, z: -0, w: 1}
-      scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_antenna_B_ctrl
-      parentName: Rigg_Hormiga_PintadoDePesos:R_antenna_B_ctrl_auto
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -827,48 +737,48 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_ctrl_offset1
+    - name: Rigg_Hormiga_PintadoDePesos:L_fornt_shoulder_ctrl_offset
       parentName: Rigg_Hormiga_PintadoDePesos:spine_C_ctrl
-      position: {x: 0.05964014, y: 0.02317548, z: -0.051}
-      rotation: {x: 0.18170635, y: -0.5596539, z: 0.49198982, w: 0.6416513}
-      scale: {x: 1, y: 1, z: -1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_ctrl_auto
-      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_ctrl_offset1
+      position: {x: 0.014945562, y: 0.046948995, z: 0.05097127}
+      rotation: {x: -0.1772768, y: 0.56107134, z: 0.49704662, w: 0.63774335}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_front_shoulder_ctrl_auto
+      parentName: Rigg_Hormiga_PintadoDePesos:L_fornt_shoulder_ctrl_offset
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_ctrl
-      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_ctrl_auto
+    - name: Rigg_Hormiga_PintadoDePesos:L_front_shoulder_ctrl
+      parentName: Rigg_Hormiga_PintadoDePesos:L_front_shoulder_ctrl_auto
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_ctrl_offset
-      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_ctrl
-      position: {x: -0.056236375, y: -0.00000013677753, z: -0.0000006369351}
-      rotation: {x: -0.024161154, y: 0.17434384, z: -0.15724191, w: 0.97174865}
+    - name: Rigg_Hormiga_PintadoDePesos:L_front_arm_ctrl_offset
+      parentName: Rigg_Hormiga_PintadoDePesos:L_front_shoulder_ctrl
+      position: {x: -0.056236766, y: -4.223851e-17, z: 9.774574e-16}
+      rotation: {x: -0.02661897, y: 0.17398553, z: -0.17093891, w: 0.969433}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_ctrl_auto
-      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_ctrl_offset
+    - name: Rigg_Hormiga_PintadoDePesos:L_front_arm_ctrl_auto
+      parentName: Rigg_Hormiga_PintadoDePesos:L_front_arm_ctrl_offset
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_ctrl
-      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_ctrl_auto
+    - name: Rigg_Hormiga_PintadoDePesos:L_front_arm_ctrl
+      parentName: Rigg_Hormiga_PintadoDePesos:L_front_arm_ctrl_auto
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_forearm_ctrl_offset
-      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_ctrl
-      position: {x: -0.07765932, y: -0.00000043495092, z: 0.00000053474537}
-      rotation: {x: 0.0066777198, y: 0.03574593, z: -0.013045353, w: 0.99925345}
+    - name: Rigg_Hormiga_PintadoDePesos:L_front_forearm_ctrl_offset
+      parentName: Rigg_Hormiga_PintadoDePesos:L_front_arm_ctrl
+      position: {x: -0.07765847, y: 2.3352892e-17, z: -7.83852e-16}
+      rotation: {x: 0.004449609, y: 0.03609106, z: -0.0749468, w: 0.9965243}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_forearm_ctrl_auto
-      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_forearm_ctrl_offset
+    - name: Rigg_Hormiga_PintadoDePesos:L_front_forearm_ctrl_auto
+      parentName: Rigg_Hormiga_PintadoDePesos:L_front_forearm_ctrl_offset
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
-    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_forearm_ctrl
-      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_forearm_ctrl_auto
+    - name: Rigg_Hormiga_PintadoDePesos:L_front_forearm_ctrl
+      parentName: Rigg_Hormiga_PintadoDePesos:L_front_forearm_ctrl_auto
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -917,6 +827,96 @@ ModelImporter:
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_ctrl_offset
+      parentName: Rigg_Hormiga_PintadoDePesos:spine_C_ctrl
+      position: {x: 0.05964014, y: 0.02317548, z: 0.050971296}
+      rotation: {x: -0.18170482, y: 0.55965304, z: 0.49199164, w: 0.6416511}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_ctrl_auto
+      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_ctrl_offset
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_ctrl
+      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_ctrl_auto
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_ctrl_offset
+      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_shoulder_ctrl
+      position: {x: -0.056236375, y: -0.00000013677753, z: -0.0000006369351}
+      rotation: {x: -0.024161154, y: 0.17434384, z: -0.15724191, w: 0.97174865}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_ctrl_auto
+      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_ctrl_offset
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_ctrl
+      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_ctrl_auto
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_forearm_ctrl_offset
+      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_arm_ctrl
+      position: {x: -0.07765932, y: -0.00000043495092, z: 0.00000053474537}
+      rotation: {x: 0.0066777198, y: 0.03574593, z: -0.013045353, w: 0.99925345}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_forearm_ctrl_auto
+      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_forearm_ctrl_offset
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:L_bihind_forearm_ctrl
+      parentName: Rigg_Hormiga_PintadoDePesos:L_bihind_forearm_ctrl_auto
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_ctrl_offset1
+      parentName: Rigg_Hormiga_PintadoDePesos:spine_C_ctrl
+      position: {x: 0.05964014, y: 0.02317548, z: -0.051}
+      rotation: {x: 0.18170635, y: -0.5596539, z: 0.49198982, w: 0.6416513}
+      scale: {x: 1, y: 1, z: -1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_ctrl_auto
+      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_ctrl_offset1
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_ctrl
+      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_ctrl_auto
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_ctrl_offset
+      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_shoulder_ctrl
+      position: {x: -0.056236375, y: -0.00000013677753, z: -0.0000006369351}
+      rotation: {x: -0.024161154, y: 0.17434384, z: -0.15724191, w: 0.97174865}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_ctrl_auto
+      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_ctrl_offset
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_ctrl
+      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_ctrl_auto
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_forearm_ctrl_offset
+      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_arm_ctrl
+      position: {x: -0.07765932, y: -0.00000043495092, z: 0.00000053474537}
+      rotation: {x: 0.0066777198, y: 0.03574593, z: -0.013045353, w: 0.99925345}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_forearm_ctrl_auto
+      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_forearm_ctrl_offset
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Rigg_Hormiga_PintadoDePesos:R_bihind_forearm_ctrl
+      parentName: Rigg_Hormiga_PintadoDePesos:R_bihind_forearm_ctrl_auto
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -931,9 +931,9 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 0
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   importBlendShapeDeformPercent: 1
   remapMaterialsIfMaterialImportModeIsNone: 0

@@ -10,10 +10,11 @@ public class ComportamientoEnemigoBASE : MonoBehaviour
     public Quaternion angulo;
     public float grado;
 
-    //objetivo que detectara/perseguira el enemigo
     public GameObject target;
-    //boleano del enemigo atacando
     public bool atacando;
+    private float distanciaAtaque = 1.5f;
+    private float distanciaMaxima = 10f;
+
     void Start()
     {
         ani = GetComponent<Animator>();
@@ -22,20 +23,24 @@ public class ComportamientoEnemigoBASE : MonoBehaviour
 
     public void Comportamiento_Enemigo()
     {
-        // distancia a partir de la cual ya no persigue al enemigo 
-        if (Vector3.Distance(transform.position, target.transform.position) > 10)
+        float distancia = Vector3.Distance(transform.position, target.transform.position);
+
+        if (distancia > distanciaMaxima)
         {
             ani.SetBool("run", false);
+            ani.SetBool("attack", false);
+            atacando = false;
+
             cronometro += 1 * Time.deltaTime;
             if (cronometro >= 4)
             {
                 rutina = Random.Range(0, 2);
                 cronometro = 0;
             }
+
             switch (rutina)
             {
                 case 0:
-
                     ani.SetBool("walk", false);
                     break;
 
@@ -52,51 +57,42 @@ public class ComportamientoEnemigoBASE : MonoBehaviour
                     break;
             }
         }
-        else
+        else if (distancia > distanciaAtaque && !atacando)
         {
-          if (Vector3.Distance(transform.position, target.transform.position) > 1 && !atacando)
+            var lookPos = target.transform.position - transform.position;
+            lookPos.y = 0;
+            var rotation = Quaternion.LookRotation(lookPos);
+            transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 2);
+
+            ani.SetBool("walk", false);
+            ani.SetBool("run", true);
+            ani.SetBool("attack", false);
+
+            transform.Translate(Vector3.forward * 2 * Time.deltaTime);
+        }
+        else if (distancia <= distanciaAtaque)
+        {
+            ani.SetBool("walk", false);
+            ani.SetBool("run", false);
+
+            if (!atacando)
             {
-                var lookPos = target.transform.position - transform.position;
-                lookPos.y = 0;
-                var rotation = Quaternion.LookRotation(lookPos);
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, rotation, 2);
-                ani.SetBool("walk", false);
-
-                ani.SetBool("run", true);
-                transform.Translate(Vector3.forward * 2 * Time.deltaTime);
-
-                ani.SetBool("attack", false);
-            }
-            else
-            {
-                ani.SetBool("walk", false);
-                ani.SetBool("run", false);
-
-                ani.SetBool("attack", true);
                 atacando = true;
-
-
+                ani.SetBool("attack", true);
+                StartCoroutine(FinalizarAtaque());
             }
         }
-
-
     }
 
-    public void Final_Ani()
+    // Este método se llama automáticamente cuando termina el ataque
+    private IEnumerator FinalizarAtaque()
     {
+        yield return new WaitForSeconds(1.0f); // Ajusta según duración real de la animación
         ani.SetBool("attack", false);
         atacando = false;
-    
     }
 
-
-
-
-
-
-
-
-private void Update()
+    private void Update()
     {
         Comportamiento_Enemigo();
     }
