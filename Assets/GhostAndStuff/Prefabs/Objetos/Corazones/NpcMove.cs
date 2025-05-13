@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -9,6 +8,9 @@ public class NpcMove : MonoBehaviour
     private State currentState = State.Patrullando;
 
     private NavMeshAgent agente;
+    private Animator animator;
+    private AudioSource audioSource;
+
     public Transform player;
 
     public float distanciaEscape = 10f;
@@ -17,15 +19,17 @@ public class NpcMove : MonoBehaviour
     public float tiempoEspera = 2f;
     public float idle = 0.5f;
 
-    private bool esperando;
+    private bool esperando = false;
     private bool escapando = false;
 
     private float escapeStartTime;
-    private float escapeTimeout = 3f; // Si después de 3s no se mueve, vuelve a patrullar
+    private float escapeTimeout = 3f;
 
     private void Start()
     {
         agente = GetComponent<NavMeshAgent>();
+        animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
         moverAlPunto();
     }
 
@@ -39,7 +43,6 @@ public class NpcMove : MonoBehaviour
                 Patrol();
                 if (distanciaToPlayer < detectionRange)
                 {
-                    Debug.Log("Detectado jugador, cambiando a ESCAPANDO");
                     currentState = State.Escapando;
                     escapando = false;
                 }
@@ -52,22 +55,21 @@ public class NpcMove : MonoBehaviour
                     escapeStartTime = Time.time;
                 }
 
-                // Si después de escapeTimeout segundos sigue sin moverse, forzamos patrullaje
                 if (Time.time - escapeStartTime > escapeTimeout)
                 {
-                    Debug.Log("Tiempo de escape agotado, volviendo a patrullar");
                     currentState = State.Patrullando;
                     moverAlPunto();
                 }
 
                 if (distanciaToPlayer > detectionRange * 1.5f)
                 {
-                    Debug.Log("Jugador lejos, volviendo a patrullar");
                     currentState = State.Patrullando;
                     moverAlPunto();
                 }
                 break;
         }
+
+        UpdateAnimatorAndAudio();
     }
 
     private void Patrol()
@@ -93,7 +95,6 @@ public class NpcMove : MonoBehaviour
 
         if (NavMesh.SamplePosition(randomDirection, out hit, rango, NavMesh.AllAreas))
         {
-            Debug.Log("Nuevo punto de patrullaje: " + hit.position);
             agente.SetDestination(hit.position);
         }
     }
@@ -109,32 +110,46 @@ public class NpcMove : MonoBehaviour
     private void Escape()
     {
         escapando = true;
-
-        // Calculamos el punto de escape sin usar NavMesh.SamplePosition
         Vector3 escapeDirection = (transform.position - player.position).normalized;
         Vector3 escapeTarget = transform.position + escapeDirection * distanciaEscape;
 
-        // Verificamos si ese punto está dentro del NavMesh antes de aplicarlo
-        if (agente.isOnNavMesh) // Verifica si el NPC está sobre el NavMesh antes de moverse
+        if (agente.isOnNavMesh)
         {
-            Debug.Log("Escapando sin SamplePosition a: " + escapeTarget);
             agente.SetDestination(escapeTarget);
         }
         else
         {
-            Debug.LogWarning("NPC fuera del NavMesh, buscando un punto válido...");
             NavMeshHit hit;
             if (NavMesh.SamplePosition(escapeTarget, out hit, distanciaEscape, NavMesh.AllAreas))
             {
-                Debug.Log("Punto de escape encontrado con SamplePosition: " + hit.position);
                 agente.SetDestination(hit.position);
             }
             else
             {
-                Debug.LogError("No se encontró un punto de escape en el NavMesh. Volviendo a patrullar.");
                 currentState = State.Patrullando;
                 moverAlPunto();
             }
         }
     }
+
+    private void UpdateAnimatorAndAudio()
+    {
+        if (animator == null || audioSource == null) return;
+
+        float velocidad = agente.velocity.magnitude;
+        bool estaEscapando = velocidad > 0.1f;
+
+        animator.SetBool("isEscaping", estaEscapando);
+        animator.SetBool("isIdle", !estaEscapando);
+
+        if (estaEscapando && !audioSource.isPlaying)
+        {
+            audioSource.Play();
+        }
+        else if (!estaEscapando && audioSource.isPlaying)
+        {
+            audioSource.Stop();
+        }
+    }
 }
+
