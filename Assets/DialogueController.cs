@@ -3,20 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
+[System.Serializable]
+public class DialogueElement
+{
+    [TextArea]
+    public string Sentence;
+    public GameObject[] ObjectsToActivate;
+    public GameObject[] ObjectsToDeactivate;
+}
+
 public class DialogueController : MonoBehaviour
 {
     public TextMeshProUGUI DialogueText;
-    public string[] Sentences;
+    public DialogueElement[] Dialogues;
     private int Index = 0;
     public float DialogueSpeed;
     public AudioSource audioSource;
     public Animator DialogueAnimator;
     private bool StartDialogue = true;
 
-    // Start is called before the first frame update
-   
+    [Header("Objeto que se desactivará al final del diálogo")]
+    public GameObject objectToDisable;
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -31,10 +39,9 @@ public class DialogueController : MonoBehaviour
                 PlaySound();
                 NextSentence();
             }
-           
-
         }
     }
+
     void PlaySound()
     {
         if (audioSource != null)
@@ -42,29 +49,56 @@ public class DialogueController : MonoBehaviour
             audioSource.Play();
         }
     }
+
     void NextSentence()
     {
-        if (Index <= Sentences.Length - 1)
+        if (Index < Dialogues.Length)
         {
             DialogueText.text = "";
-            StartCoroutine(WriteSentence());
+            HandleObjectActivation(Dialogues[Index]);
+            StartCoroutine(WriteSentence(Dialogues[Index].Sentence));
         }
         else
         {
             DialogueText.text = "";
             DialogueAnimator.SetTrigger("Exit");
-            Index= 0;
+
+            if (objectToDisable != null)
+            {
+                objectToDisable.SetActive(false);
+            }
+
+            Index = 0;
             StartDialogue = true;
         }
+    }
 
-        IEnumerator WriteSentence()
+    IEnumerator WriteSentence(string sentence)
+    {
+        foreach (char Character in sentence.ToCharArray())
         {
-            foreach (char Character in Sentences[Index].ToCharArray())
+            DialogueText.text += Character;
+            yield return new WaitForSeconds(DialogueSpeed);
+        }
+        Index++;
+    }
+
+    void HandleObjectActivation(DialogueElement element)
+    {
+        if (element.ObjectsToActivate != null)
+        {
+            foreach (var obj in element.ObjectsToActivate)
             {
-                DialogueText.text += Character;
-                yield return new WaitForSeconds(DialogueSpeed);
+                if (obj != null) obj.SetActive(true);
             }
-            Index++;
+        }
+
+        if (element.ObjectsToDeactivate != null)
+        {
+            foreach (var obj in element.ObjectsToDeactivate)
+            {
+                if (obj != null) obj.SetActive(false);
+            }
         }
     }
 }
