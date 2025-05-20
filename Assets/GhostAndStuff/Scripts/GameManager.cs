@@ -83,7 +83,7 @@ public class GameManager : MonoBehaviour
         if (playerCurrentHealth <= 0)
         {
             playerCurrentHealth = 0;
-            // Aquí puedes manejar lógica de Game Over, respawn, etc.
+            // Aquí se puede  manejar lógica de Game Over, respawn, etc.
         }
     }
 
