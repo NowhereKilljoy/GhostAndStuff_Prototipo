@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -8,13 +8,15 @@ public class EnemyHealth : MonoBehaviour, INotifications
     public int enemyID;
     public int damageE;
 
-    [Header("Prefab al Recibir Da�o")]
-    public GameObject hitEffectPrefab;   // Prefab que aparece al recibir da�o
+    [Header("Prefab al Recibir Daño")]
+    public GameObject hitEffectPrefab;   // Prefab que aparece al recibir daño
+    public AudioClip hitSound;           // Nuevo sonido al recibir daño
 
     [Header("Muerte")]
     public GameObject deathPrefab;       // Prefab que aparece al morir
     public float destroyDelay = 3f;
     public AudioClip deathSound;
+
     private AudioSource audioSource;
     private Animator animator;
 
@@ -53,10 +55,10 @@ public class EnemyHealth : MonoBehaviour, INotifications
             observer.Updated(this, idEvent);
         }
 
-        // Instanciar efecto visual al recibir da�o
-        if (idEvent == 1) // Evento de recibir da�o
+        if (idEvent == 1) // Evento de recibir daño
         {
             PlayHitEffect();
+            PlayHitSound(); //  Reproducir sonido de daño
         }
     }
 
@@ -69,28 +71,43 @@ public class EnemyHealth : MonoBehaviour, INotifications
         }
     }
 
+    private void PlayHitSound()
+    {
+        if (audioSource != null && hitSound != null)
+        {
+            audioSource.PlayOneShot(hitSound);
+        }
+    }
+
     public void PlayDeathEffects()
     {
-        // 1. Animaci�n
-        if (animator != null)
+        // Detener movimiento al morir
+        ComportamientoEnemigoBASE comportamiento = GetComponent<ComportamientoEnemigoBASE>();
+        if (comportamiento != null)
         {
-            animator.SetTrigger("death"); // Trigger del Animator
+            comportamiento.isDead = true;
         }
 
-        // 2. Sonido
-        if (deathSound != null)
+        // Animación de muerte
+        if (animator != null)
+        {
+            animator.SetTrigger("death");
+        }
+
+        // Sonido de muerte
+        if (audioSource != null && deathSound != null)
         {
             audioSource.PlayOneShot(deathSound);
         }
 
-        // 3. Prefab visual
+        // Prefab visual de muerte
         if (deathPrefab != null)
         {
             GameObject obj = Instantiate(deathPrefab, transform.position, transform.rotation);
             Destroy(obj, destroyDelay + 2f);
         }
 
-        // 4. Desactivarse despu�s del delay
+        // Desactivarse luego de un tiempo
         StartCoroutine(DesactivarDespuesDeTiempo(destroyDelay));
     }
 

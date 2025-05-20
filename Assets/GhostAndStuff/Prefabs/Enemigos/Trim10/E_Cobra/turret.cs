@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,12 +10,33 @@ public class turret : MonoBehaviour
     private float fireCountdown = 0f;
     public GameObject bulletPrefab;
     public Transform firePoint;
-    public float verticalAngle = 15f; // Angle for vertical shooting
-    public float speed = 20f; // Bullet speed
+    public float verticalAngle = 15f;
+    public float speed = 20f;
+
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip idleSound;
+    public AudioClip shootSound;
+    private AudioClip currentClip;
+
+    private Animator animator;
 
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         InvokeRepeating("UpdateTarget", 0f, 0.5f);
+
+        if (audioSource == null)
+        {
+            audioSource = GetComponent<AudioSource>();
+            if (audioSource == null)
+            {
+                audioSource = gameObject.AddComponent<AudioSource>();
+            }
+        }
+
+        PlayIdleSound();
     }
 
     void UpdateTarget()
@@ -47,18 +68,21 @@ public class turret : MonoBehaviour
     void Update()
     {
         if (target == null)
-            return;
+        {
+            if (animator != null)
+                animator.SetTrigger("Idle");
 
-        // Calculate turret rotation
+            PlayIdleSound();
+            return;
+        }
+
         Vector3 dir = target.position - transform.position;
         Quaternion lookRotation = Quaternion.LookRotation(dir);
         Vector3 rotation = Quaternion.Lerp(transform.rotation, lookRotation, Time.deltaTime * 10f).eulerAngles;
         transform.rotation = Quaternion.Euler(0f, rotation.y, 0f);
 
-        // Check if the player is within the turret's field of view
         if (Physics.Raycast(transform.position, dir, range))
         {
-            // Fire bullet
             if (fireCountdown <= 0f)
             {
                 Shoot();
@@ -71,19 +95,35 @@ public class turret : MonoBehaviour
 
     void Shoot()
     {
-        // Get the direction the turret is facing
-        Vector3 direction = firePoint.forward;
+        if (animator != null)
+            animator.SetTrigger("Shoot");
 
-        // Randomly choose a vertical angle
+        Vector3 direction = firePoint.forward;
         float angle = Random.Range(-verticalAngle, verticalAngle);
         Quaternion bulletRotation = Quaternion.Euler(angle, 0f, 0f);
 
-        // Instantiate bullet with adjusted rotation
         GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation * bulletRotation);
-
-        // Set the bullet's initial velocity
         bullet.GetComponent<Rigidbody>().velocity = direction * speed;
+
+        PlayShootSound();
     }
 
+    void PlayIdleSound()
+    {
+        if (audioSource != null && idleSound != null && currentClip != idleSound)
+        {
+            audioSource.clip = idleSound;
+            audioSource.loop = true;
+            audioSource.Play();
+            currentClip = idleSound;
+        }
+    }
 
+    void PlayShootSound()
+    {
+        if (audioSource != null && shootSound != null)
+        {
+            audioSource.PlayOneShot(shootSound);
+        }
+    }
 }
