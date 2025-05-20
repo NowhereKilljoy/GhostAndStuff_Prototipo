@@ -45,9 +45,12 @@ public class EnemyManager : MonoBehaviour, IObserver
 
     public void EnemyDeath(EnemyHealth _enemy)
     {
-        Debug.Log("Enemigo desactivate: " + _enemy.enemyID);
+        Debug.Log("Enemigo desactivado: " + _enemy.enemyID);
+
         enemyHealthDict.Remove(_enemy.enemyID);
-        _enemy.gameObject.SetActive(false);
+
+        // Llamar a los efectos de muerte
+        _enemy.PlayDeathEffects();
     }
 
     public void DestroyEnemy(int enemyID)
