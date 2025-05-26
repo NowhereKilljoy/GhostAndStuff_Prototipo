@@ -1,4 +1,4 @@
-using System.Collections;
+ï»¿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -24,17 +24,21 @@ public class ComportamientoEnemigoBASE : MonoBehaviour
 
     private AudioClip currentClip;
 
+    [Header("Estado de vida")]
+    public bool isDead = false;  // se activa al morir
+
     void Start()
     {
         ani = GetComponent<Animator>();
         target = GameObject.Find("PlayerArmature");
 
-        // Reproducir sonido idle desde inicio
         PlaySound(idleClip);
     }
 
     public void Comportamiento_Enemigo()
     {
+        if (isDead) return;  //Si estÃ¡ muerto el enemigo ya no hace nada
+
         float distancia = Vector3.Distance(transform.position, target.transform.position);
 
         if (distancia > distanciaMaxima)
@@ -103,7 +107,7 @@ public class ComportamientoEnemigoBASE : MonoBehaviour
 
     private IEnumerator FinalizarAtaque()
     {
-        yield return new WaitForSeconds(1.0f); // Ajustar según la duración real de la animación
+        yield return new WaitForSeconds(1.0f);
         ani.SetBool("attack", false);
         atacando = false;
     }
@@ -123,6 +127,9 @@ public class ComportamientoEnemigoBASE : MonoBehaviour
 
     private void Update()
     {
-        Comportamiento_Enemigo();
+        if (!isDead)  //TambiÃ©n se revisa antes de cada frame, esto podria consumir mucha memoria? consultarlo despues
+        {
+            Comportamiento_Enemigo();
+        }
     }
 }
