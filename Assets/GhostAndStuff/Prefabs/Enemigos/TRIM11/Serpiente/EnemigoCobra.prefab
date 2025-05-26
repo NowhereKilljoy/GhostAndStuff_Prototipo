@@ -211,6 +211,10 @@ MonoBehaviour:
   maxHealth: 10
   enemyID: 0
   damageE: 10
+  hitEffectPrefab: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!65 &6893454056379859127
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -231,7 +235,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 0.30956912, y: 0.72225887, z: 0.564323}
-  m_Center: {x: -0.00007314815, y: -0.13887118, z: -0.068142414}
+  m_Center: {x: -0.00007314815, y: -0.21, z: -0.068142414}
 --- !u!1 &7893381897775451941
 GameObject:
   m_ObjectHideFlags: 0
