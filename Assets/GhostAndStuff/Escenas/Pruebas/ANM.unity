@@ -2008,83 +2008,6 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 0
---- !u!1001 &314209714
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -42.42
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.0000009536743
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 1.6145837
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-        type: 3}
-      propertyPath: m_Name
-      value: Cabra_Muerte
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1462120826}
-  m_SourcePrefab: {fileID: 100100000, guid: fb6616004b0a8ac4ebe016d24dc1c586, type: 3}
 --- !u!1 &377334024
 GameObject:
   m_ObjectHideFlags: 0
@@ -12636,29 +12559,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1402767462}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1462120825 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-    type: 3}
-  m_PrefabInstance: {fileID: 314209714}
-  m_PrefabAsset: {fileID: 0}
---- !u!111 &1462120826
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1462120825}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 1827226128182048838, guid: fb6616004b0a8ac4ebe016d24dc1c586,
-    type: 3}
-  m_Animations:
-  - {fileID: 1827226128182048838, guid: fb6616004b0a8ac4ebe016d24dc1c586, type: 3}
-  m_WrapMode: 0
-  m_PlayAutomatically: 1
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1001 &1466657961
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16062,7 +15962,7 @@ PrefabInstance:
     - target: {fileID: 5249521044275345126, guid: ee4355445ab7ccb4bb775cad0724b23c,
         type: 3}
       propertyPath: m_Name
-      value: EnemigoCobra
+      value: EnemigoCobra_FINAL
       objectReference: {fileID: 0}
     - target: {fileID: 5249521044275345126, guid: ee4355445ab7ccb4bb775cad0724b23c,
         type: 3}
@@ -19505,11 +19405,10 @@ SceneRoots:
   - {fileID: 541511187}
   - {fileID: 909241759}
   - {fileID: 1632446419}
-  - {fileID: 3332903647491453602}
   - {fileID: 1343729131}
   - {fileID: 1331763119}
   - {fileID: 157020547}
+  - {fileID: 3332903647491453602}
   - {fileID: 5753688563513036930}
   - {fileID: 444890171}
   - {fileID: 1940874982}
-  - {fileID: 314209714}
