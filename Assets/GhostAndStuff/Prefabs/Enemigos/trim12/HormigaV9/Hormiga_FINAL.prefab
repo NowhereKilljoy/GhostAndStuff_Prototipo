@@ -52,8 +52,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 500
+  MinDistance: 0.92
+  MaxDistance: 1.25
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -118,7 +118,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 1
+      value: 1.1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -800,10 +800,10 @@ MonoBehaviour:
   target: {fileID: 0}
   atacando: 0
   audioSource: {fileID: 7733491636769264986}
-  idleClip: {fileID: 8300000, guid: cda33127e1394a547bcf2e866e2e4a7d, type: 3}
-  walkClip: {fileID: 8300000, guid: bb68f1e5f4a6892458eb17bd322b662f, type: 3}
-  runClip: {fileID: 8300000, guid: d58f25bb6eb4d634191cc1375ce06e32, type: 3}
-  attackClip: {fileID: 8300000, guid: 3971f6f9438e60e4db859eba6faedca6, type: 3}
+  idleClip: {fileID: 8300000, guid: a3afcdc41d67ccd448622ad6814d43a8, type: 3}
+  walkClip: {fileID: 8300000, guid: a3afcdc41d67ccd448622ad6814d43a8, type: 3}
+  runClip: {fileID: 8300000, guid: b58b44362178311459a2a31a5303217a, type: 3}
+  attackClip: {fileID: 8300000, guid: c2004b445a5bb1a4fa83507528c2d868, type: 3}
   isDead: 0
 --- !u!114 &3945182791110572117
 MonoBehaviour:
@@ -826,7 +826,7 @@ MonoBehaviour:
   deathPrefab: {fileID: 3819947696452698735, guid: a4f6886e6ef039c40a121146ea4485ca,
     type: 3}
   destroyDelay: 3
-  deathSound: {fileID: 8300000, guid: 1325c90b295e32c4a811a0154b79d8e7, type: 3}
+  deathSound: {fileID: 8300000, guid: d980745e0e5571b458b42789875e8a55, type: 3}
 --- !u!65 &2578596330907064756
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -846,8 +846,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.37906745, y: 0.7696774, z: 1.2773027}
-  m_Center: {x: -0.003837415, y: 0.38891417, z: 0.13865131}
+  m_Size: {x: 0.37906745, y: 0.7696774, z: 1.4010807}
+  m_Center: {x: -0.003837415, y: 0.38891417, z: 0.20054033}
 --- !u!114 &4969612155424596151
 MonoBehaviour:
   m_ObjectHideFlags: 0
