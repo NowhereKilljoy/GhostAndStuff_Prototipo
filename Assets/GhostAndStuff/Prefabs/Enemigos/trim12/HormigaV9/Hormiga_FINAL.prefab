@@ -745,6 +745,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 3509628948091130293}
+    - targetCorrespondingSourceObject: {fileID: -1563698292046277246, guid: af045eaca61fc894e900fb1da896327b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6758237769159589389}
   m_SourcePrefab: {fileID: 100100000, guid: af045eaca61fc894e900fb1da896327b, type: 3}
 --- !u!4 &3960553320147171128 stripped
 Transform:
@@ -883,3 +887,52 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!1 &6570944887486842193 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: -1563698292046277246, guid: af045eaca61fc894e900fb1da896327b,
+    type: 3}
+  m_PrefabInstance: {fileID: 3565741771447128275}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &6758237769159589389
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6570944887486842193}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 19a2f5135d3fa714db21389b7df9eba1, type: 2}
+  - {fileID: 2100000, guid: 26dee0b19a776154e949414c070e75c3, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}

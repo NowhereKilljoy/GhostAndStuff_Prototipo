@@ -106,8 +106,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.39073095, y: 0.45169324, z: 0.3374628}
-  m_Center: {x: 0.0035876483, y: -0.06231712, z: -0.0017687578}
+  m_Size: {x: 0.4, y: 0.23, z: 0.3}
+  m_Center: {x: 0, y: 0.3, z: 0}
 --- !u!114 &4057764582050684105
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -161,7 +161,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 0.42
-  m_BaseOffset: 0.26
+  m_BaseOffset: 0.01
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!114 &3793874005954579938
@@ -244,6 +244,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CorazonFINAL
+      objectReference: {fileID: 0}
+    - target: {fileID: 7642162868694401842, guid: 2ee9f47f53958f445a4080155b7d7b13,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 25.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7642162868694401842, guid: 2ee9f47f53958f445a4080155b7d7b13,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 39.268745
+      objectReference: {fileID: 0}
+    - target: {fileID: 7642162868694401842, guid: 2ee9f47f53958f445a4080155b7d7b13,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -1.2967976
+      objectReference: {fileID: 0}
+    - target: {fileID: 7642162868694401842, guid: 2ee9f47f53958f445a4080155b7d7b13,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 30.334251
+      objectReference: {fileID: 0}
+    - target: {fileID: 7642162868694401842, guid: 2ee9f47f53958f445a4080155b7d7b13,
+        type: 3}
+      propertyPath: m_Center.z
+      value: -1.8377964
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -40,6 +40,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1884876021077557735}
     m_Modifications:
+    - target: {fileID: 2578596330907064756, guid: cdfd4854cb42d6948b9dbb9ab91b4790,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 0.76967746
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578596330907064756, guid: cdfd4854cb42d6948b9dbb9ab91b4790,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 1.0913478
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578596330907064756, guid: cdfd4854cb42d6948b9dbb9ab91b4790,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.0038374192
+      objectReference: {fileID: 0}
+    - target: {fileID: 2578596330907064756, guid: cdfd4854cb42d6948b9dbb9ab91b4790,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 0.045673814
+      objectReference: {fileID: 0}
     - target: {fileID: 2578884709668620193, guid: cdfd4854cb42d6948b9dbb9ab91b4790,
         type: 3}
       propertyPath: m_LocalPosition.y
@@ -104,6 +124,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6758237769159589389, guid: cdfd4854cb42d6948b9dbb9ab91b4790,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
