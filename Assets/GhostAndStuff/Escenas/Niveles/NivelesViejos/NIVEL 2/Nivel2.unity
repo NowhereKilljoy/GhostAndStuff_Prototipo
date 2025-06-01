@@ -37,7 +37,7 @@ RenderSettings:
   m_ReflectionBounces: 1
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
-  m_Sun: {fileID: 6128496664221867766}
+  m_Sun: {fileID: 661960996}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -96,8 +96,9 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 74ae1a3754b1a84439def8a40289d66e,
+  m_LightingDataAsset: {fileID: 112000000, guid: d8d7dee0f4490624890cb9eb9cac705f,
+    type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 8261b7bee8bf2f64394917229a31af33,
     type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -4402,6 +4403,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!1001 &161750568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6167,6 +6173,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!65 &247557629
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8423,6 +8434,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &345410060
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -10129,124 +10145,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6800068011787576398, guid: 46211b8157b057344bcb99ae7dae0551, type: 3}
---- !u!1 &410087039
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 410087041}
-  - component: {fileID: 410087040}
-  - component: {fileID: 410087042}
-  m_Layer: 0
-  m_Name: Directional Light
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!108 &410087040
-Light:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410087039}
-  m_Enabled: 1
-  serializedVersion: 10
-  m_Type: 1
-  m_Shape: 0
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
-  m_Range: 10
-  m_SpotAngle: 30
-  m_InnerSpotAngle: 21.80208
-  m_CookieSize: 10
-  m_Shadows:
-    m_Type: 2
-    m_Resolution: -1
-    m_CustomResolution: -1
-    m_Strength: 1
-    m_Bias: 0.05
-    m_NormalBias: 0.4
-    m_NearPlane: 0.1
-    m_CullingMatrixOverride:
-      e00: 1
-      e01: 0
-      e02: 0
-      e03: 0
-      e10: 0
-      e11: 1
-      e12: 0
-      e13: 0
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    m_UseCullingMatrixOverride: 0
-  m_Cookie: {fileID: 0}
-  m_DrawHalo: 0
-  m_Flare: {fileID: 0}
-  m_RenderMode: 0
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingLayerMask: 1
-  m_Lightmapping: 1
-  m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1
-  m_ColorTemperature: 5000
-  m_UseColorTemperature: 1
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
-  m_UseBoundingSphereOverride: 0
-  m_UseViewFrustumForShadowCasterCull: 1
-  m_ShadowRadius: 0
-  m_ShadowAngle: 0
---- !u!4 &410087041
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410087039}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0.48616898, y: 0.22467569, z: 0.5838131, w: 0.6101827}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 160.673, y: -116.858, z: -80.58301}
---- !u!114 &410087042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 410087039}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Version: 3
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_LightLayerMask: 1
-  m_RenderingLayers: 1
-  m_CustomShadowLayers: 0
-  m_ShadowLayerMask: 1
-  m_ShadowRenderingLayers: 1
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
 --- !u!64 &411610672
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -11569,6 +11467,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!1 &444529458 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2842037033376944124, guid: 46211b8157b057344bcb99ae7dae0551,
@@ -12449,6 +12352,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &454857303
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13276,6 +13184,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &506778475
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14275,6 +14188,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &555099411
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15299,6 +15217,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &611465240
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -15483,6 +15406,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &614234402
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16482,6 +16410,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &649184691
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16663,6 +16596,125 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -2687082943859414102, guid: 46211b8157b057344bcb99ae7dae0551, type: 3}
+--- !u!1001 &661960995
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3698433156390319244, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.44705886
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698433156390319244, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.8084734
+      objectReference: {fileID: 0}
+    - target: {fileID: 4680361062567352431, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_Name
+      value: LUCES_NIVEL2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070407526625242191, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070407526625242191, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -33.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5070407526625242191, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 24.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699371172349720834, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699371172349720834, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 84.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699371172349720834, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699371172349720834, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699371172349720834, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699371172349720834, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699371172349720834, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699371172349720834, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699371172349720834, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5699371172349720834, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6987839252260708871, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.4292453
+      objectReference: {fileID: 0}
+    - target: {fileID: 6987839252260708871, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.84980136
+      objectReference: {fileID: 0}
+    - target: {fileID: 6987839252260708871, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953947616257953978, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c6fc33ddd0f44bd48b185fe004d440e5, type: 3}
+--- !u!108 &661960996 stripped
+Light:
+  m_CorrespondingSourceObject: {fileID: 6987839252260708871, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+    type: 3}
+  m_PrefabInstance: {fileID: 661960995}
+  m_PrefabAsset: {fileID: 0}
 --- !u!64 &662390200
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17249,6 +17301,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &684244646
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -19356,6 +19413,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &770123334
 Animator:
   serializedVersion: 5
@@ -19392,6 +19454,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &771060006
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -28533,6 +28600,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!65 &901601432
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29064,6 +29136,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &928402635
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29101,6 +29178,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &931781775
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29537,6 +29619,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &957915369
 Animator:
   serializedVersion: 5
@@ -30106,6 +30193,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &983513103
 Animator:
   serializedVersion: 5
@@ -32648,6 +32740,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1080998025
 Animator:
   serializedVersion: 5
@@ -32698,6 +32795,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1080998030
 Animator:
   serializedVersion: 5
@@ -32835,6 +32937,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1089822373
 Animator:
   serializedVersion: 5
@@ -33104,6 +33211,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1097474724
 Animator:
   serializedVersion: 5
@@ -33379,6 +33491,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1107241498
 Animator:
   serializedVersion: 5
@@ -33912,6 +34029,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1132104119
 Animator:
   serializedVersion: 5
@@ -34636,6 +34758,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!1001 &1164353001
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35062,6 +35189,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1177266046
 Animator:
   serializedVersion: 5
@@ -35155,6 +35287,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1179761161
 Animator:
   serializedVersion: 5
@@ -35497,6 +35634,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1194268070
 Animator:
   serializedVersion: 5
@@ -36000,6 +36142,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1221304022
 Animator:
   serializedVersion: 5
@@ -36386,6 +36533,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1251699107
 Animator:
   serializedVersion: 5
@@ -36795,6 +36947,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1272515496
 Animator:
   serializedVersion: 5
@@ -37244,6 +37401,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1288538637
 Animator:
   serializedVersion: 5
@@ -37880,6 +38042,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1311073812
 Animator:
   serializedVersion: 5
@@ -38758,6 +38925,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1349813572
 Animator:
   serializedVersion: 5
@@ -39009,6 +39181,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1367469271
 Animator:
   serializedVersion: 5
@@ -39221,6 +39398,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1372913821
 Animator:
   serializedVersion: 5
@@ -39424,6 +39606,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1381124405
 Animator:
   serializedVersion: 5
@@ -40230,6 +40417,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1406388551
 Animator:
   serializedVersion: 5
@@ -40544,6 +40736,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &1411221679
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -40690,6 +40887,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1413581742
 Animator:
   serializedVersion: 5
@@ -41158,6 +41360,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1438468378
 Animator:
   serializedVersion: 5
@@ -41657,6 +41864,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1451889647
 Animator:
   serializedVersion: 5
@@ -42061,6 +42273,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &1464890257
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42219,6 +42436,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1471224791
 Animator:
   serializedVersion: 5
@@ -42549,6 +42771,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1479544255
 Animator:
   serializedVersion: 5
@@ -42817,6 +43044,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1490193297
 Animator:
   serializedVersion: 5
@@ -43089,6 +43321,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1496533743
 Animator:
   serializedVersion: 5
@@ -43204,6 +43441,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1505451535
 Animator:
   serializedVersion: 5
@@ -43606,6 +43848,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1516160697
 Animator:
   serializedVersion: 5
@@ -44749,6 +44996,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &1571087980
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -45152,6 +45404,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1579865316
 Animator:
   serializedVersion: 5
@@ -45692,6 +45949,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1600804566
 Animator:
   serializedVersion: 5
@@ -45928,6 +46190,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!114 &1603803149
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -45992,6 +46259,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1607612240
 Animator:
   serializedVersion: 5
@@ -46232,6 +46504,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1621701429
 Animator:
   serializedVersion: 5
@@ -46399,6 +46676,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &1626591374
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -46611,6 +46893,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1629281015
 Animator:
   serializedVersion: 5
@@ -46712,6 +46999,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &1630966751
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47187,6 +47479,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1634569226
 Animator:
   serializedVersion: 5
@@ -47281,6 +47578,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1635730766
 Animator:
   serializedVersion: 5
@@ -50571,6 +50873,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1748431856
 Animator:
   serializedVersion: 5
@@ -50651,6 +50958,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1751070188
 Animator:
   serializedVersion: 5
@@ -51265,6 +51577,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &1780902508
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51477,6 +51794,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1791705139
 Animator:
   serializedVersion: 5
@@ -51762,6 +52084,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &1805757952
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -52285,6 +52612,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1824299573
 Animator:
   serializedVersion: 5
@@ -52401,6 +52733,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1827346180
 Animator:
   serializedVersion: 5
@@ -75971,6 +76308,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &1889065325
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -76167,6 +76509,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1892267160
 Animator:
   serializedVersion: 5
@@ -76260,6 +76607,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1893848746
 Animator:
   serializedVersion: 5
@@ -77261,6 +77613,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1935243477
 Animator:
   serializedVersion: 5
@@ -77678,6 +78035,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &1958157652
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -78139,6 +78501,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!114 &1958915856
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -78168,6 +78535,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1958915858
 Animator:
   serializedVersion: 5
@@ -78204,6 +78576,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1958915860
 Animator:
   serializedVersion: 5
@@ -78460,6 +78837,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!1001 &1969508273
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -78578,6 +78960,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &1971217110
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -78739,6 +79126,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &1973866630
 Animator:
   serializedVersion: 5
@@ -79081,6 +79473,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &1991835779
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -80305,6 +80702,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!114 &2044577065
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -80355,6 +80757,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &2045202803
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -80493,6 +80900,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &2050201463
 Animator:
   serializedVersion: 5
@@ -81010,6 +81422,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &2074791146
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -81186,6 +81603,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!1001 &2080090046
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -81320,6 +81742,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &2080455843
 Animator:
   serializedVersion: 5
@@ -81525,6 +81952,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!114 &2086312575
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81540,6 +81972,11 @@ MonoBehaviour:
   maxHealth: 0
   enemyID: 0
   damageE: 0
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &2086657035
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -81731,6 +82168,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &2094592894
 Animator:
   serializedVersion: 5
@@ -82168,6 +82610,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &2108682807
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -82402,6 +82849,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!64 &2116037293
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -82651,6 +83103,11 @@ MonoBehaviour:
   maxHealth: 1
   enemyID: 0
   damageE: 1
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!95 &2128298469
 Animator:
   serializedVersion: 5
@@ -83319,21 +83776,15 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1162339537}
   m_SourcePrefab: {fileID: 100100000, guid: 417dce4f821131f4f8307c244e0fee1c, type: 3}
---- !u!108 &6128496664221867766 stripped
-Light:
-  m_CorrespondingSourceObject: {fileID: 436312186843027250, guid: 417dce4f821131f4f8307c244e0fee1c,
-    type: 3}
-  m_PrefabInstance: {fileID: 6128496664221867765}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
-  - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 161750568}
   - {fileID: 6128496664221867765}
   - {fileID: 777040517}
+  - {fileID: 661960995}
   - {fileID: 1842710822}
   - {fileID: 960135276}
   - {fileID: 1236494658}

@@ -96,7 +96,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: 85037208fe041b54dae219310a38b9c3,
+    type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: f8fa0e10072ed234c99d3e55caf90c4b,
     type: 2}
 --- !u!196 &4
@@ -62535,6 +62536,31 @@ PrefabInstance:
       propertyPath: m_Intensity
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 3698433156390319244, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.44891423
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698433156390319244, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.84987354
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698433156390319244, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698433156390319244, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698433156390319244, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4511480342638151812, guid: c6fc33ddd0f44bd48b185fe004d440e5,
         type: 3}
       propertyPath: m_Intensity
@@ -62639,6 +62665,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Intensity
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 7953947616257953978, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8190584794296472167, guid: c6fc33ddd0f44bd48b185fe004d440e5,
         type: 3}
