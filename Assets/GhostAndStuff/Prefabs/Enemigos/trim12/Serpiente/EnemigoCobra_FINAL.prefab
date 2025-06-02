@@ -149,7 +149,7 @@ SkinnedMeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 2100000, guid: f1735890cddd32c4e8b7de3024eec07c, type: 2}
-  - {fileID: 2100000, guid: 5e3d80eb611f48a4fb40a1dff821d53b, type: 2}
+  - {fileID: 2100000, guid: 6f896df9c9112f7499cb55566af211d7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1107,7 +1107,8 @@ MonoBehaviour:
   maxHealth: 10
   enemyID: 0
   damageE: 10
-  hitEffectPrefab: {fileID: 0}
+  hitEffectPrefab: {fileID: 3049593223018048565, guid: 686b1f96ed282b144bde3909c1f28d0a,
+    type: 3}
   hitSound: {fileID: 0}
   deathPrefab: {fileID: 0}
   destroyDelay: 3
