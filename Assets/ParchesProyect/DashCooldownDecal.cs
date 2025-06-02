@@ -22,6 +22,7 @@ public class DashCooldownDecal : MonoBehaviour
     public bool isOnCooldown = true;
     private Material instancedMaterial;
 
+
     private static readonly int BaseMapProperty = Shader.PropertyToID("_BaseMap");
 
     
@@ -30,7 +31,7 @@ public class DashCooldownDecal : MonoBehaviour
         
         // Create an instance of the material to avoid modifying the original asset
         instancedMaterial = new Material(decalMaterial);
-
+        decalProjector.material = instancedMaterial;
         // Assign the instanced material to the decal projector
         if (decalProjector == null)
         {
@@ -47,15 +48,14 @@ public class DashCooldownDecal : MonoBehaviour
             }
         }
 
-        if (decalProjector != null)
+        if (ThirdPersonController.Instance.canDash)
         {
-            decalProjector.material = instancedMaterial;
             // Set initial texture to ready state
             instancedMaterial.SetTexture(BaseMapProperty, readyTexture);
         }
         else
         {
-            Debug.LogError("Decal Projector is missing! Please assign it in the inspector.");
+            instancedMaterial.SetTexture(BaseMapProperty, coolingDownTexture);
         }
     }
 
