@@ -563,8 +563,14 @@ PrefabInstance:
     - target: {fileID: 2327173520910660101, guid: afdd51930393f3544968a3a645d7fc2e,
         type: 3}
       propertyPath: destroyDelay
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2327173520910660101, guid: afdd51930393f3544968a3a645d7fc2e,
+        type: 3}
+      propertyPath: hitEffectPrefab
+      value: 
+      objectReference: {fileID: 3049593223018048565, guid: 686b1f96ed282b144bde3909c1f28d0a,
+        type: 3}
     - target: {fileID: 7914206115692361133, guid: afdd51930393f3544968a3a645d7fc2e,
         type: 3}
       propertyPath: m_Speed
