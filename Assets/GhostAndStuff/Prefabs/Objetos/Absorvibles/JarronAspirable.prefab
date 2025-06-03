@@ -121,6 +121,11 @@ MonoBehaviour:
   maxHealth: 300
   enemyID: 2
   damageE: 50
+  hitEffectPrefab: {fileID: 0}
+  hitSound: {fileID: 0}
+  deathPrefab: {fileID: 0}
+  destroyDelay: 3
+  deathSound: {fileID: 0}
 --- !u!114 &8885070796969655572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,18 +216,28 @@ PrefabInstance:
     - target: {fileID: -657987901025630493, guid: 68b2a433fd775d04398fa9077ad49fb6,
         type: 3}
       propertyPath: m_Materials.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -657987901025630493, guid: 68b2a433fd775d04398fa9077ad49fb6,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e994a2a06979b0445b5fbc8b8aed4066, type: 2}
+      objectReference: {fileID: 2100000, guid: c895fd7949cc8c34db1c4ad9d815e6eb, type: 2}
     - target: {fileID: -657987901025630493, guid: 68b2a433fd775d04398fa9077ad49fb6,
         type: 3}
       propertyPath: m_Materials.Array.data[1]
       value: 
+      objectReference: {fileID: 2100000, guid: c895fd7949cc8c34db1c4ad9d815e6eb, type: 2}
+    - target: {fileID: -657987901025630493, guid: 68b2a433fd775d04398fa9077ad49fb6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
       objectReference: {fileID: 2100000, guid: 0858d11334f44f94f8f0eeec80665185, type: 2}
+    - target: {fileID: -657987901025630493, guid: 68b2a433fd775d04398fa9077ad49fb6,
+        type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: c895fd7949cc8c34db1c4ad9d815e6eb, type: 2}
     - target: {fileID: 919132149155446097, guid: 68b2a433fd775d04398fa9077ad49fb6,
         type: 3}
       propertyPath: m_Name

@@ -51,9 +51,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8176562104590048639}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 20a010b4312475848bb77db3a6c4c729, type: 2}
+  m_Controller: {fileID: 9100000, guid: 1e9c2414efc4c2448ac4401d36c51335, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   hitEffectPrefab: {fileID: 0}
   hitSound: {fileID: 0}
   deathPrefab: {fileID: 0}
-  destroyDelay: 3
+  destroyDelay: 0
   deathSound: {fileID: 0}
 --- !u!114 &8539121234298877151
 MonoBehaviour:
@@ -528,6 +528,31 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[3]
       value: 
       objectReference: {fileID: 2100000, guid: d6708fe19ff4d3e42913cf93d984753e, type: 2}
+    - target: {fileID: 2134582770901391392, guid: afdd51930393f3544968a3a645d7fc2e,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 177.45628
+      objectReference: {fileID: 0}
+    - target: {fileID: 2134582770901391392, guid: afdd51930393f3544968a3a645d7fc2e,
+        type: 3}
+      propertyPath: m_Size.z
+      value: 139.27768
+      objectReference: {fileID: 0}
+    - target: {fileID: 2134582770901391392, guid: afdd51930393f3544968a3a645d7fc2e,
+        type: 3}
+      propertyPath: m_Center.x
+      value: -0.00000003068823
+      objectReference: {fileID: 0}
+    - target: {fileID: 2134582770901391392, guid: afdd51930393f3544968a3a645d7fc2e,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 58.72817
+      objectReference: {fileID: 0}
+    - target: {fileID: 2134582770901391392, guid: afdd51930393f3544968a3a645d7fc2e,
+        type: 3}
+      propertyPath: m_Center.z
+      value: 17.3095
+      objectReference: {fileID: 0}
     - target: {fileID: 2327173520910660101, guid: afdd51930393f3544968a3a645d7fc2e,
         type: 3}
       propertyPath: deathPrefab
@@ -538,6 +563,16 @@ PrefabInstance:
         type: 3}
       propertyPath: destroyDelay
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914206115692361133, guid: afdd51930393f3544968a3a645d7fc2e,
+        type: 3}
+      propertyPath: m_Speed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914206115692361133, guid: afdd51930393f3544968a3a645d7fc2e,
+        type: 3}
+      propertyPath: m_Acceleration
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9195914783223030062, guid: afdd51930393f3544968a3a645d7fc2e,
         type: 3}
