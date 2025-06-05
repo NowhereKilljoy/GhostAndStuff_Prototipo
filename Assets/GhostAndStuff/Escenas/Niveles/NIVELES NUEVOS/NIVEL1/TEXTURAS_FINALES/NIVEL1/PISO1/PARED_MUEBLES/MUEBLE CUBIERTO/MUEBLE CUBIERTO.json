@@ -1,0 +1,58 @@
+{
+    "format": {
+        "version": "1.0"
+    },
+    "scene": {
+        "scale_factor": 1.7042045593261719
+    },
+    "shaders": {
+        "Sombreador principal": {
+            "displacementTessellation": {
+                "displacement": {
+                    "scale": 0,
+                    "source_channel": 0
+                },
+                "enable": true,
+                "tessellation": {
+                    "max_length": 64,
+                    "subdiv_count": 1,
+                    "subdiv_mode": 0
+                }
+            },
+            "parameters": {
+                "Asignación de oclusión de paralaje/geometría": {
+                    "maxPOMSamples": 16,
+                    "minPOMSamples": 4,
+                    "pomStrength": 1,
+                    "usePOM": false
+                },
+                "Line_color": [
+                    0.07854712754487991,
+                    0.07854712754487991,
+                    0.07854712754487991
+                ],
+                "Superficie base": {
+                    "ao_intensity": 0.75,
+                    "emissive_intensity": 1,
+                    "horizonFade": 1.2999999523162842,
+                    "nbSamples": 16
+                },
+                "inline_thickness": 0.3199999928474426,
+                "lightPosition_": [
+                    9.729999542236328,
+                    2.9100000858306885,
+                    11.75
+                ],
+                "outline_thickness": 0.33000001311302185,
+                "toonParam": -0.1899999976158142
+            },
+            "shader": "Toon-User0-sRGB8v1-1",
+            "shaderInstance": "Sombreador principal"
+        }
+    },
+    "texturesets": {
+        "MUEBLE_CUBIERTO17_initialShadingGroup1": {
+            "shader": "Sombreador principal"
+        }
+    }
+}
