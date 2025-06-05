@@ -1,0 +1,58 @@
+{
+    "format": {
+        "version": "1.0"
+    },
+    "scene": {
+        "scale_factor": 1.8081130981445312
+    },
+    "shaders": {
+        "Main shader": {
+            "displacementTessellation": {
+                "displacement": {
+                    "scale": 0,
+                    "source_channel": 0
+                },
+                "enable": true,
+                "tessellation": {
+                    "max_length": 64,
+                    "subdiv_count": 1,
+                    "subdiv_mode": 0
+                }
+            },
+            "parameters": {
+                "Asignación de oclusión de paralaje/geometría": {
+                    "maxPOMSamples": 16,
+                    "minPOMSamples": 4,
+                    "pomStrength": 1,
+                    "usePOM": false
+                },
+                "Line_color": [
+                    0.44604015350341797,
+                    0.39780953526496887,
+                    0.39780953526496887
+                ],
+                "Superficie base": {
+                    "ao_intensity": 0.75,
+                    "emissive_intensity": 1,
+                    "horizonFade": 1.2999999523162842,
+                    "nbSamples": 16
+                },
+                "inline_thickness": 0.30000001192092896,
+                "lightPosition_": [
+                    10,
+                    10,
+                    10
+                ],
+                "outline_thickness": 0.20000000298023224,
+                "toonParam": 0
+            },
+            "shader": "Toon-User0-sRGB8v1-1",
+            "shaderInstance": "Main shader"
+        }
+    },
+    "texturesets": {
+        "lambert1": {
+            "shader": "Main shader"
+        }
+    }
+}
