@@ -98,7 +98,7 @@ LightmapSettings:
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 112000000, guid: d8d7dee0f4490624890cb9eb9cac705f,
     type: 2}
-  m_LightingSettings: {fileID: 4890085278179872738, guid: 8261b7bee8bf2f64394917229a31af33,
+  m_LightingSettings: {fileID: 4890085278179872738, guid: f8fa0e10072ed234c99d3e55caf90c4b,
     type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -1939,12 +1939,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -2009,7 +2009,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 89586642}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &89586640 stripped
 Transform:
@@ -2017,6 +2021,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 89586639}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &89586641 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 89586639}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &89586642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 89586641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &95486971
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -2497,12 +2532,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -2567,7 +2602,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 102077432}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &102077430 stripped
 Transform:
@@ -2575,6 +2614,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 102077429}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &102077431 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 102077429}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &102077432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102077431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!1001 &104098000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4731,6 +4801,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1047284806664181305, guid: ef6d62c8429e206409a61c8fca3a0bd6,
+        type: 3}
+      propertyPath: playerMaxHealth
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5885158121631704207, guid: ef6d62c8429e206409a61c8fca3a0bd6,
         type: 3}
       propertyPath: m_Name
@@ -8339,12 +8414,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -8409,7 +8484,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 327785256}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &327785253 stripped
 Transform:
@@ -8417,6 +8496,43 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 327785252}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &327785254 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2096584375936557016, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 327785252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &327785255 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 327785252}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &327785256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327785255}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &329993845
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -13384,12 +13500,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -13454,7 +13570,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 492669087}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &492669085 stripped
 Transform:
@@ -13462,6 +13582,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 492669084}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &492669086 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 492669084}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &492669087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 492669086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!114 &493922975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14663,12 +14814,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -14733,7 +14884,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 577390640}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &577390638 stripped
 Transform:
@@ -14741,6 +14896,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 577390637}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &577390639 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 577390637}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &577390640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 577390639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &577932378
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -14921,12 +15107,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -14991,7 +15177,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 591535528}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &591535526 stripped
 Transform:
@@ -14999,6 +15189,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 591535525}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &591535527 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 591535525}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &591535528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 591535527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!1001 &596635531
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15743,12 +15964,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -15813,7 +16034,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 617063951}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &617063949 stripped
 Transform:
@@ -15821,6 +16046,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 617063948}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &617063950 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 617063948}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &617063951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617063950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &617919994
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -16885,6 +17141,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3698433156390319244, guid: c6fc33ddd0f44bd48b185fe004d440e5,
         type: 3}
+      propertyPath: m_Range
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698433156390319244, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
       propertyPath: m_Color.b
       value: 0.6745283
       objectReference: {fileID: 0}
@@ -16897,6 +17158,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Color.r
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698433156390319244, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_Intensity
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3698433156390319244, guid: c6fc33ddd0f44bd48b185fe004d440e5,
+        type: 3}
+      propertyPath: m_Shadows.m_Type
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4680361062567352431, guid: c6fc33ddd0f44bd48b185fe004d440e5,
         type: 3}
@@ -18283,12 +18554,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -18353,7 +18624,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 711260497}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &711260495 stripped
 Transform:
@@ -18361,6 +18636,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 711260494}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &711260496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 711260494}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &711260497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 711260496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &712772253
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20111,12 +20417,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -20181,7 +20487,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 779282878}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &779282876 stripped
 Transform:
@@ -20189,6 +20499,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 779282875}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &779282877 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 779282875}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &779282878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779282877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!114 &780104744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20574,12 +20915,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -20644,7 +20985,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 799056331}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &799056329 stripped
 Transform:
@@ -20652,6 +20997,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 799056328}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &799056330 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 799056328}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &799056331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 799056330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &799156706
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -21047,12 +21423,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -21117,7 +21493,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 817413463}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &817413461 stripped
 Transform:
@@ -21125,6 +21505,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 817413460}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &817413462 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 817413460}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &817413463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817413462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &820306982
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26545,12 +26956,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -26615,7 +27026,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 852960494}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &852960492 stripped
 Transform:
@@ -26623,6 +27038,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 852960491}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &852960493 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 852960491}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &852960494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852960493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &856252178
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -26846,12 +27292,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -26916,7 +27362,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 864698926}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &864698924 stripped
 Transform:
@@ -26924,6 +27374,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 864698923}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &864698925 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 864698923}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &864698926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 864698925}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &864779695
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -29522,12 +30003,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -29592,7 +30073,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 955323259}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &955323257 stripped
 Transform:
@@ -29600,6 +30085,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 955323256}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &955323258 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 955323256}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &955323259
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955323258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!1001 &956385732
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31101,12 +31617,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -31171,7 +31687,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1002249733}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &1002249731 stripped
 Transform:
@@ -31179,6 +31699,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1002249730}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1002249732 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1002249730}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1002249733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1002249732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!1 &1002459621
 GameObject:
   m_ObjectHideFlags: 0
@@ -38058,12 +38609,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -38128,8 +38679,43 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1277776467}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
+--- !u!1 &1277776466 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1277776465}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1277776467
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1277776466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &1277837000
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -42484,12 +43070,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -42554,7 +43140,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1440068769}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &1440068767 stripped
 Transform:
@@ -42562,6 +43152,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1440068766}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1440068768 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1440068766}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1440068769
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1440068768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!43 &1443144374
 Mesh:
   m_ObjectHideFlags: 0
@@ -44969,12 +45590,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -45039,7 +45660,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1507821244}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &1507821242 stripped
 Transform:
@@ -45047,6 +45672,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1507821241}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1507821243 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1507821241}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1507821244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507821243}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!1 &1507848715 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7111355481762138872, guid: 46211b8157b057344bcb99ae7dae0551,
@@ -46529,12 +47185,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -46599,7 +47255,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1568214141}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &1568214139 stripped
 Transform:
@@ -46607,6 +47267,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1568214138}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1568214140 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1568214138}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1568214141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1568214140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &1568258121
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -47752,12 +48443,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -47822,7 +48513,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1602325756}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &1602325754 stripped
 Transform:
@@ -47830,6 +48525,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1602325753}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1602325755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1602325753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1602325756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1602325755}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &1603074289
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -48820,12 +49546,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -48890,7 +49616,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1633519850}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &1633519848 stripped
 Transform:
@@ -48898,6 +49628,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1633519847}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1633519849 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1633519847}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1633519850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1633519849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!1 &1633955019 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7109028228650501141, guid: 46211b8157b057344bcb99ae7dae0551,
@@ -50072,12 +50833,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -50142,7 +50903,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1672325734}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &1672325732 stripped
 Transform:
@@ -50150,6 +50915,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1672325731}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1672325733 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1672325731}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1672325734
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1672325733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &1674092244
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -50604,12 +51400,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -50674,7 +51470,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1681654366}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &1681654364 stripped
 Transform:
@@ -50682,6 +51482,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1681654363}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1681654365 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1681654363}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1681654366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681654365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &1681952424
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -51806,12 +52637,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -51876,7 +52707,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1709262710}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &1709262708 stripped
 Transform:
@@ -51884,6 +52719,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1709262707}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1709262709 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1709262707}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1709262710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1709262709}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &1710006939
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -53299,12 +54165,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -53369,7 +54235,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1783039263}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &1783039261 stripped
 Transform:
@@ -53377,6 +54247,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1783039260}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1783039262 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1783039260}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1783039263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1783039262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &1785836107
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -82986,12 +83887,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -83056,7 +83957,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1979920768}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &1979920766 stripped
 Transform:
@@ -83064,6 +83969,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1979920765}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1979920767 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1979920765}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1979920768
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1979920767}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &1984384868
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -83702,12 +84638,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -83772,7 +84708,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2015733136}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &2015733134 stripped
 Transform:
@@ -83780,6 +84720,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2015733133}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2015733135 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2015733133}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2015733136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2015733135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &2016909567
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -87005,12 +87976,12 @@ PrefabInstance:
     - target: {fileID: 3465054438954931115, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6185669447406195075, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
       propertyPath: pushForce
-      value: 12
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7538110373388976458, guid: d7afb002afa02bc4ab2e5d5482d115d3,
         type: 3}
@@ -87075,7 +88046,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2140524143}
   m_SourcePrefab: {fileID: 100100000, guid: d7afb002afa02bc4ab2e5d5482d115d3, type: 3}
 --- !u!4 &2140524141 stripped
 Transform:
@@ -87083,6 +88058,37 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2140524140}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2140524142 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8176562104590048639, guid: d7afb002afa02bc4ab2e5d5482d115d3,
+    type: 3}
+  m_PrefabInstance: {fileID: 2140524140}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2140524143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2140524142}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf2a16458919be54191bbc2686fb80c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rutina: 0
+  cronometro: 0
+  ani: {fileID: 327785254}
+  angulo: {x: 0, y: 0, z: 0, w: 0}
+  grado: 0
+  target: {fileID: 0}
+  atacando: 0
+  audioSource: {fileID: 0}
+  idleClip: {fileID: 0}
+  walkClip: {fileID: 0}
+  runClip: {fileID: 0}
+  attackClip: {fileID: 0}
+  isDead: 0
 --- !u!64 &2141073513
 MeshCollider:
   m_ObjectHideFlags: 0
