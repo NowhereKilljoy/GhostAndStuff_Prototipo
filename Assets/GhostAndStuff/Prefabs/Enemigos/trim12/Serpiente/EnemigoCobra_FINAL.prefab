@@ -922,7 +922,7 @@ Transform:
   m_GameObject: {fileID: 5249521044275345126}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.4036, y: 0.72217, z: -7.6948}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.8, y: 1.8, z: 1.8}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1057,8 +1057,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6362258611719120928}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: 0.0038266182, z: -0, w: 0.9999927}
-  m_LocalPosition: {x: -0.001, y: 0.007, z: 0.03}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.87799335, y: 0.87799335, z: 0.87799335}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1068,7 +1068,7 @@ Transform:
   - {fileID: 4861508369238297076}
   - {fileID: 1632048580375033621}
   m_Father: {fileID: 1738465049343434902}
-  m_LocalEulerAnglesHint: {x: 0, y: 0.438, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6918509154642981299
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1104,13 +1104,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6470250d4bb3f644946ff83bff8cc6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 10
+  maxHealth: 1
   enemyID: 0
-  damageE: 10
+  damageE: 1
   hitEffectPrefab: {fileID: 3049593223018048565, guid: 686b1f96ed282b144bde3909c1f28d0a,
     type: 3}
   hitSound: {fileID: 0}
-  deathPrefab: {fileID: 0}
+  deathPrefab: {fileID: 4855004183966701912, guid: cc00c70a5be60a549946e4b5517bb5b7,
+    type: 3}
   destroyDelay: 0
   deathSound: {fileID: 0}
 --- !u!65 &5709214250803093105
@@ -1143,7 +1144,7 @@ Animator:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6362258611719120928}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
+  m_Avatar: {fileID: 9000000, guid: 35e12dd9bc09bde44b255d5159976c05, type: 3}
   m_Controller: {fileID: 9100000, guid: 0974cb7941029664e82a2f73d0e85bfd, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0

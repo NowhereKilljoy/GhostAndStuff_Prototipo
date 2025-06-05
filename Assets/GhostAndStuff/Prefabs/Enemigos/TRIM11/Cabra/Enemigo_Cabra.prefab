@@ -556,6 +556,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2327173520910660101, guid: afdd51930393f3544968a3a645d7fc2e,
         type: 3}
+      propertyPath: damageE
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2327173520910660101, guid: afdd51930393f3544968a3a645d7fc2e,
+        type: 3}
+      propertyPath: maxHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2327173520910660101, guid: afdd51930393f3544968a3a645d7fc2e,
+        type: 3}
       propertyPath: deathPrefab
       value: 
       objectReference: {fileID: 919132149155446097, guid: fb6616004b0a8ac4ebe016d24dc1c586,
@@ -563,7 +573,7 @@ PrefabInstance:
     - target: {fileID: 2327173520910660101, guid: afdd51930393f3544968a3a645d7fc2e,
         type: 3}
       propertyPath: destroyDelay
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2327173520910660101, guid: afdd51930393f3544968a3a645d7fc2e,
         type: 3}
@@ -579,6 +589,21 @@ PrefabInstance:
     - target: {fileID: 7914206115692361133, guid: afdd51930393f3544968a3a645d7fc2e,
         type: 3}
       propertyPath: m_Acceleration
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914206115692361133, guid: afdd51930393f3544968a3a645d7fc2e,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914206115692361133, guid: afdd51930393f3544968a3a645d7fc2e,
+        type: 3}
+      propertyPath: m_WalkableMask
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7914206115692361133, guid: afdd51930393f3544968a3a645d7fc2e,
+        type: 3}
+      propertyPath: m_ObstacleAvoidanceType
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 9195914783223030062, guid: afdd51930393f3544968a3a645d7fc2e,
