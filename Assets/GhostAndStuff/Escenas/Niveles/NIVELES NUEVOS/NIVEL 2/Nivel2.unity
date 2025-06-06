@@ -36446,6 +36446,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1292662143}
+    - target: {fileID: 7351953779168436484, guid: 7c6acc5b7bc759345a364274627b1e7e,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7984590099023071110, guid: 7c6acc5b7bc759345a364274627b1e7e,
         type: 3}
       propertyPath: m_Name
@@ -66804,6 +66809,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 832575519}
+  - {fileID: 897985170}
   - {fileID: 161750568}
   - {fileID: 6128496664221867765}
   - {fileID: 777040517}
@@ -66817,7 +66823,6 @@ SceneRoots:
   - {fileID: 414711412}
   - {fileID: 1859728731}
   - {fileID: 1164353001}
-  - {fileID: 897985170}
   - {fileID: 540954092}
   - {fileID: 1942151529}
   - {fileID: 1864351491}

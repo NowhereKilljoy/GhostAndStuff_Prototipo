@@ -1,8 +1,5 @@
 using UnityEngine;
 
-
-
-
 public class CheckPoint : MonoBehaviour
 {
     public GameObject onSpawner;
@@ -25,14 +22,25 @@ public class CheckPoint : MonoBehaviour
             RespawnManager respawnManager = FindObjectOfType<RespawnManager>();
             respawnManager.UpdateRespawnPoint(this.transform);
             Debug.Log("Checkpoint alcanzado en: " + transform.name);
+        }
+    }
 
+    public void SetCheckpointActive(bool isActive)
+    {
+        if (isActive)
+        {
             onSpawner.SetActive(true);
             offSpawner.SetActive(false);
 
             if (onAnimator != null)
             {
-                onAnimator.Play("ActivoLoop"); // nombre exacto del estado en el Animator
+                onAnimator.Play("ActivoLoop");
             }
+        }
+        else
+        {
+            onSpawner.SetActive(false);
+            offSpawner.SetActive(true);
         }
     }
 }
