@@ -2916,17 +2916,17 @@ PrefabInstance:
     - target: {fileID: 2031121292576392123, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.21172658
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2031121292576392123, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.21172658
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2031121292576392123, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.85660374
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2036695706961915375, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
@@ -3282,7 +3282,7 @@ PrefabInstance:
     - target: {fileID: 5167926538108711334, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.48
+      value: -8.479996
       objectReference: {fileID: 0}
     - target: {fileID: 5192727834368445946, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
@@ -3332,7 +3332,7 @@ PrefabInstance:
     - target: {fileID: 7311939938090127771, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -8.48
+      value: -8.479996
       objectReference: {fileID: 0}
     - target: {fileID: 7311939938090127771, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
@@ -3617,8 +3617,8 @@ MonoBehaviour:
   CameraDistance: 8.48
   CameraCollisionFilter:
     serializedVersion: 2
-    m_Bits: 0
-  IgnoreTag: 
+    m_Bits: 4294967295
+  IgnoreTag: Player
   CameraRadius: 0.2
   DampingIntoCollision: 0
   DampingFromCollision: 2
