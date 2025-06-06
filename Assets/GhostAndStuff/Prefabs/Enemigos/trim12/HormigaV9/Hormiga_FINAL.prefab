@@ -44,13 +44,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.03
+  m_Pitch: -0.06
   Loop: 0
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 128
+  Priority: 241
   DopplerLevel: 1
   MinDistance: 0.92
   MaxDistance: 1.25
@@ -814,10 +814,10 @@ MonoBehaviour:
   target: {fileID: 0}
   atacando: 0
   audioSource: {fileID: 7733491636769264986}
-  idleClip: {fileID: 8300000, guid: a3afcdc41d67ccd448622ad6814d43a8, type: 3}
+  idleClip: {fileID: 8300000, guid: 40efc25d8686e7147ba1560e00eac706, type: 3}
   walkClip: {fileID: 8300000, guid: a3afcdc41d67ccd448622ad6814d43a8, type: 3}
-  runClip: {fileID: 8300000, guid: b58b44362178311459a2a31a5303217a, type: 3}
-  attackClip: {fileID: 8300000, guid: c2004b445a5bb1a4fa83507528c2d868, type: 3}
+  runClip: {fileID: 8300000, guid: a63f9c4f5206ad34493e50dcba153007, type: 3}
+  attackClip: {fileID: 8300000, guid: 8bd1766468516cd409ec1725dcbef8d1, type: 3}
   isDead: 0
 --- !u!114 &3945182791110572117
 MonoBehaviour:
@@ -837,9 +837,8 @@ MonoBehaviour:
   hitEffectPrefab: {fileID: 8798701906468491716, guid: 63254bbd91432d041b68cffe36f31f76,
     type: 3}
   hitSound: {fileID: 8300000, guid: 3971f6f9438e60e4db859eba6faedca6, type: 3}
-  deathPrefab: {fileID: 3819947696452698735, guid: a4f6886e6ef039c40a121146ea4485ca,
-    type: 3}
-  destroyDelay: 3
+  deathPrefab: {fileID: 0}
+  destroyDelay: 0
   deathSound: {fileID: 8300000, guid: d980745e0e5571b458b42789875e8a55, type: 3}
 --- !u!65 &2578596330907064756
 BoxCollider:
