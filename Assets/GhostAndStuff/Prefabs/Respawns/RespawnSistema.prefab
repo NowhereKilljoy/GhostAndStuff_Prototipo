@@ -295,7 +295,6 @@ GameObject:
   - component: {fileID: 6904464322648054265}
   - component: {fileID: 3661671632865505638}
   - component: {fileID: 8231907945667282758}
-  - component: {fileID: 5536158902167362552}
   m_Layer: 0
   m_Name: RespawnPoint_1
   m_TagString: Checkpoint
@@ -357,21 +356,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onSpawner: {fileID: 1239577596575659379}
   offSpawner: {fileID: 3674577007673375845}
---- !u!111 &5536158902167362552
-Animation:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7043655400244248695}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: aedd61c0ed4562a409e53c24218ba6fa, type: 2}
-  m_Animations: []
-  m_WrapMode: 0
-  m_PlayAutomatically: 0
-  m_AnimatePhysics: 0
-  m_CullingType: 0
 --- !u!1 &8276360466017519190
 GameObject:
   m_ObjectHideFlags: 0

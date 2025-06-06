@@ -509,7 +509,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3541453739469250736
 Transform:
   m_ObjectHideFlags: 0
@@ -2911,8 +2911,23 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 7019f5836c59bf54bb99b877b9cd51e2,
+      objectReference: {fileID: 21300000, guid: b5eddce5cc3f59741b72692d501cddc6,
         type: 3}
+    - target: {fileID: 2031121292576392123, guid: 33481939a6e52764bbdc5100d1722472,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.21172658
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031121292576392123, guid: 33481939a6e52764bbdc5100d1722472,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.21172658
+      objectReference: {fileID: 0}
+    - target: {fileID: 2031121292576392123, guid: 33481939a6e52764bbdc5100d1722472,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 0.85660374
+      objectReference: {fileID: 0}
     - target: {fileID: 2036695706961915375, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
       propertyPath: m_IsActive
@@ -3257,7 +3272,7 @@ PrefabInstance:
     - target: {fileID: 5167926538108711334, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.8199997
+      value: 1.4599991
       objectReference: {fileID: 0}
     - target: {fileID: 5167926538108711334, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
@@ -3307,7 +3322,7 @@ PrefabInstance:
     - target: {fileID: 7311939938090127771, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.8199997
+      value: 1.4599991
       objectReference: {fileID: 0}
     - target: {fileID: 7311939938090127771, guid: 33481939a6e52764bbdc5100d1722472,
         type: 3}
@@ -3596,7 +3611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Damping: {x: 0.1, y: 0.5, z: 0.3}
-  ShoulderOffset: {x: 0.82, y: -0.4, z: 0}
+  ShoulderOffset: {x: 1.46, y: -0.4, z: 0}
   VerticalArmLength: 0.4
   CameraSide: 1
   CameraDistance: 8.48
